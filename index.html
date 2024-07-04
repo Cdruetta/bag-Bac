@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAGBAC CARS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="css/bulma.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="bg-dark py-3">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img
+                src="img/baglogo.png"
+                alt="Logo de Nuestros Autos"
+                width="50"
+                height="40"
+              />
+              <h1 class="title is-4">BAGBAC CARS</h1>
+            </a>
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Más</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="clasificados.html"
+                    >Clasificados</a
+                  >
+                  <a class="navbar-item" href="garantias.html"
+                    >garantias</a
+                  >
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item" href="autos.html">Detalles de Autos</a>
+                </div>
+              </div>
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a
+                    id="seguros-button"
+                    class="button is-primary is-outlined"
+                    href="clasificados.html"
+                    ><strong>0km</strong></a
+                  >
+                  <a
+                    id="postventa-button"
+                    class="button is-primary is-outlined"
+                    href="garantias.html"
+                    ><strong>Garantias</strong></a
+                  >
+                  <a
+                    id="usados-button"
+                    class="button is-primary is-outlined"
+                    href="#"
+                    ><strong>Post Venta</strong></a>
+                  <a
+                    id="usados-button"
+                    class="button is-primary is-outlined"
+                    href="#"
+                    ><strong>Seguros</strong></a
+                  >
+                  
+                </div>
+              </div>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a
+                    id="login-button"
+                    class="button is-success"
+                    href="login.html"
+                    ><strong>Iniciar Sesión</strong></a
+                  >
+                  <a
+                    id="register-button"
+                    class="button is-light"
+                    href="registro.html"
+                    ><strong>Registrarse</strong></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="section">
+      <div class="container">
+        <!-- Start Carousel 2 -->
+        <div id="carousel-cuerpo" class="carousel mt-5">
+          <div class="item-1 carousel-item">
+            <img src="img/cuerpo1.png" alt="" class="carousel-image" />
+          </div>
+          <div class="item-2 carousel-item">
+            <img src="img/cuerpo2.png" alt="" class="carousel-image" />
+          </div>
+          <div class="item-3 carousel-item">
+            <img src="img/cuerpo3.png" alt="" class="carousel-image" />
+          </div>
+          <div class="item-4 carousel-item">
+            <img src="img/cuerpo4.png" alt="" class="carousel-image" />
+          </div>
+          <div class="item-5 carousel-item">
+            <img src="img/cuerpo5.png" alt="" class="carousel-image" />
+          </div>
+        </div>
+        <!-- End Carousel 2 -->
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Start Carousel 1 -->
+        <div id="carousel-demo" class="carousel-1">
+          <div class="item-1">
+            <div class="image-container">
+              <img
+                src="img/car1.jpeg"
+                alt=""
+                data-info="JEEP Cherokee, Mod. 2020, Km 94000"
+                class="carousel-image"
+              />
+              <div class="image-overlay">
+                <div class="overlay-content"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-2">
+            <div class="image-container">
+              <img
+                src="img/car2.jpeg"
+                alt=""
+                data-info="Fiat 500 Abarth, Mod. 2022, Km 30000"
+                class="carousel-image"
+              />
+              <div class="image-overlay">
+                <div class="overlay-content"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-3">
+            <div class="image-container">
+              <img
+                src="img/car3.jpg"
+                alt=""
+                data-info="Chrysler 300, Mod. 2017, Km 140000"
+                class="carousel-image"
+              />
+              <div class="image-overlay">
+                <div class="overlay-content"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-4">
+            <div class="image-container">
+              <img
+                src="img/car4.jpg"
+                alt=""
+                data-info="Ford ranger XLT, Mod. 2021, Km 170000"
+                class="carousel-image"
+              />
+              <div class="image-overlay">
+                <div class="overlay-content"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-5">
+            <div class="image-container">
+              <img
+                src="img/car5.jpg"
+                alt=""
+                data-info="VW Suran , Mod. 2021, Km 100000"
+                class="carousel-image"
+              />
+              <div class="image-overlay">
+                <div class="overlay-content"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-6">
+            <div class="image-container">
+              <img
+                src="img/car6.jpg"
+                alt=""
+                data-info="Ford Fiesta Titanium, Mod. 2022, Km 20000"
+                class="carousel-image"
+              />
+              <div class="image-overlay">
+                <div class="overlay-content"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-7">
+            <div class="image-container">
+              <img
+                src="img/car7.jpeg"
+                alt=""
+                data-info="Nisan Sentra, Mod. 2020, Km 110000"
+                class="carousel-image"
+              />
+              <div class="image-overlay">
+                <div class="overlay-content"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-8">
+            <div class="image-container">
+              <img
+                src="img/car8.jpg"
+                alt=""
+                data-info="Información de la imagen 8"
+                class="carousel-image"
+              />
+              <div class="image-overlay">
+                <div class="overlay-content"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-9">
+            <div class="image-container">
+              <img
+                src="img/car9.jpeg"
+                alt=""
+                data-info=
+                class="carousel-image"
+              />
+              <div class="image-overlay">
+                <div class="overlay-content"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-10">
+            <div class="image-container">
+              <img
+                src="img/car10.jpeg"
+                alt=""
+                class="carousel-image"
+              />
+              <div class="image-overlay">
+                <div class="overlay-content"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Carousel 1 -->
+      </div>
+      <!-- Contenedor para mostrar la información -->
+      <div id="info-container" class="info-container">
+        <div id="info-content" class="info-content"></div>
+      </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="section" id="contact-form">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h2 class="title">Formulario de Contacto</h2>
+            <form action="submit_form.php" method="POST">
+              <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control">
+                  <input class="input" type="text" name="nombre" required />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="email" name="email" required />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Mensaje</label>
+                <div class="control">
+                  <textarea class="textarea" name="mensaje" required></textarea>
+                </div>
+              </div>
+              <div class="control">
+                <button class="button is-primary" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="js/bulma-carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Autos</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+        <link rel="stylesheet" href="css/bulma.css"> 
+            
+            
+    </head>
+<body>
+    <header class="bg-dark py-3">
+        <div class="container">
+            <h1 class="text-white">Nuestros Autos</h1>
+            <nav>
+               
+                <a href="clasificados.html" class="button is-primary">Clasificados</a>
+                <a href="fichas_tecnicas.html" class="button is-primary">Fichas Técnicas</a>
+                <a href="#" class="button is-primary">Otro botón</a>
+                <a href="#" class="button is-primary">Otro botón</a>
+            </nav>
+            
+        </div>
+    </header>
+
+    <main>
+        <div id="detalle-auto">
+            <img src="img/pngegg (1).png" alt="Preview">
+            <div class="card-caption">Hermosa BMW X6, Mod. 2022</div>
+            <p>Modelo: BMW X6</p>
+            <p>Año: 2022</p>
+            <p>Precio: $XX,XXX</p>
+            <p>Motor: [Tipo de motor]</p>
+            <p>Transmisión: [Tipo de transmisión]</p>
+            <p>Capacidad de pasajeros: [Número de pasajeros]</p>
+            <p>Historial de mantenimiento: [Detalles del historial de mantenimiento]</p>
+            <p>Opciones y accesorios: [Lista de opciones y accesorios]</p>
+            <p>Comentarios: [Comentarios de clientes anteriores]</p>
+        </div>
+    </main>
+
+    <footer class="bg-dark py-3">
+        <div class="container">
+            <p class="text-white">© <span id="year"></span> Tu Concesionaria de Autos</p>
+        </div>
+    </footer>
+
+    <script>
+        // Cargar el footer desde footer.html
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+                document.getElementById("year").innerHTML = new Date().getFullYear(); // Actualizar el año
+            });
+    </script>
+
+    <div id="container has-text-centered" >
+        <script>
+        // Obtener el ID del auto de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const autoId = parseInt(urlParams.get('id'));
+
+        // Array con los detalles de cada auto (podrías cargar estos datos desde una fuente externa)
+        const autos = [
+            { id: 1, modelo: "BMW X6", año: 2022, imagen: "img/pngegg (1).png", descripcion: "Hermosa BMW X6, Mod. 2022" },
+            { id: 2, modelo: "BMW X6", año: 2022, imagen: "img/pngegg (2).png", descripcion: "BMW X6, Mod.2022" },
+            { id: 3, modelo: "Toyota Hilux", año: 2024, imagen: "img/pngegg (8).png", descripcion: "Toyota Hilux, Mod. 2024" },
+            { id: 4, modelo: "BMW X6", año: 2023, imagen: "img/Diseño sin título.png", descripcion: "BMW X6, Mod. 2023" }
+        ];
+
+        // Encontrar el auto correspondiente al ID en la URL
+        const autoSeleccionado = autos.find(auto => auto.id === autoId);
+
+        // Mostrar el detalle del auto
+        if (autoSeleccionado) {
+            const detalleAutoContainer = document.getElementById('detalle-auto');
+            detalleAutoContainer.innerHTML = `
+                <img src="${autoSeleccionado.imagen}" alt="Preview">
+                <div class="card-caption">${autoSeleccionado.descripcion}</div>
+                <p>Modelo: ${autoSeleccionado.modelo}</p>
+                <p>Año: ${autoSeleccionado.año}</p>
+                <p>Precio: $XX,XXX</p>
+                <p>Motor: [Tipo de motor]</p>
+                <p>Transmisión: [Tipo de transmisión]</p>
+                <p>Capacidad de pasajeros: [Número de pasajeros]</p>
+                <p>Historial de mantenimiento: [Detalles del historial de mantenimiento]</p>
+                <p>Opciones y accesorios: [Lista de opciones y accesorios]</p>
+                <p>Comentarios: [Comentarios de clientes anteriores]</p>
+            `;
+        } else {
+            // Si no se encuentra el auto, mostrar un mensaje de error o redirigir a una página de error
+            // Por ejemplo:
+            // window.location.href = "error.html";
+            console.error("Auto no encontrado");
+        }
+    </script>
+    </div>
+
+</body>
+</html>

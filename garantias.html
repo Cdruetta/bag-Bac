@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAGBAC CARS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="bg-dark py-3">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                        <img src="img/baglogo.png" alt="Logo de Nuestros Autos" width="50" height="40">
+                        <h1 class="title is-4">BAGBAC CARS</h1>
+                    </a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">Más</a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" href="clasificados.html">Clasificados</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item" href="autos.html">Detalles de Autos</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a id="seguros-button" class="button is-primary is-outlined" href="clasificados.html"><strong>0km</strong></a>
+                                <a id="postventa-button" class="button is-primary is-outlined" href="#"><strong>Post Venta</strong></a>
+                                <a id="usados-button" class="button is-primary is-outlined" href="#"><strong>Seguros</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a id="login-button" class="button is-success" href="login.html"><strong>Iniciar Sesión</strong></a>
+                                <a id="register-button" class="button is-light" href="registro.html"><strong>Registrarse</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="subtitle">Garantías Disponibles</h2>
+            <article class="media">
+                <figure class="media-left"></figure>
+                <div class="media-content">
+                    <p><strong>Garantía de Fábrica Garantizada</strong></p>
+                    <!-- Ocultar contenido adicional por defecto -->
+                    <div class="additional-info" style="display: none;">
+                        <p>Duración: Generalmente, 5 años o hasta 100.000 km, lo que ocurra primero.</p>
+                        <p>Cobertura: Cubre reparaciones y reemplazo por defectos de fabricación en una amplia gama de componentes, incluyendo el motor, transmisión, sistema de frenos, entre otros. Algunas garantías también pueden incluir servicios de mantenimiento preventivo durante el período de cobertura.</p>
+                        <p>Exclusiones: Desgaste normal de las partes, daños por accidentes, modificaciones no autorizadas, entre otras condiciones específicas.</p>
+                        <p>Requisitos: Mantenimiento regular según el manual del fabricante, preferiblemente en concesionarios autorizados.</p>
+                    </div>
+                    <!-- Botón para mostrar/ocultar contenido adicional -->
+                    <button class="button is-small is-info" onclick="toggleInfo(this)">Ver Más</button>
+                </div>
+            </article>
+
+            <article class="media">
+                <figure class="media-left"></figure>
+                <div class="media-content">
+                    <p><strong>Garantía de Servicio Posventa</strong></p>
+                    <div class="additional-info" style="display: none;">
+                        <p>Duración: Varía según el acuerdo, pero comúnmente por el primer año después de la compra.</p>
+                        <p>Cobertura: Ofrece soporte técnico, reparaciones y reemplazos por defectos de fabricación o fallas en el funcionamiento bajo condiciones normales de uso. También puede incluir servicios de mantenimiento preventivo.</p>
+                        <p>Exclusiones: Daños causados por el conductor, uso inadecuado del vehículo, entre otros.</p>
+                        <p>Requisitos: Uso del vehículo conforme a las instrucciones del fabricante, mantenimiento regular según las recomendaciones del fabricante.</p>
+                    </div>
+                    <button class="button is-small is-info" onclick="toggleInfo(this)">Ver Más</button>
+                </div>
+            </article>
+
+            <article class="media">
+                <figure class="media-left"></figure>
+                <div class="media-content">
+                    <p><strong>Garantía de Mantenimiento Preventivo</strong></p>
+                    <div class="additional-info" style="display: none;">
+                        <p>Duración: Generalmente, 3 años o hasta 60.000 km, lo que ocurra primero.</p>
+                        <p>Cobertura: Proporciona servicios de mantenimiento preventivo gratuitos, incluyendo cambios de aceite, filtraciones, chequeos de seguridad, entre otros, que son esenciales para mantener el buen estado del vehículo.</p>
+                        <p>Exclusiones: Reparaciones no relacionadas con el mantenimiento preventivo, daños por accidentes, entre otros.</p>
+                        <p>Requisitos: El vehículo debe ser presentado en concesionarios autorizados para realizar el mantenimiento según el calendario establecido por el fabricante.</p>
+                    </div>
+                    <button class="button is-small is-info" onclick="toggleInfo(this)">Ver Más</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-two-thirds">
+                    <h1 class="title">Formulario de Solicitudes de Garantía</h1>
+                    <p>Una vez elegida la garantía, llene el siguiente formulario para poder adquirir la garantía deseada.</p>
+                    <form class="form-left">
+                        <div class="field">
+                            <label class="label">Marca del Auto</label>
+                            <div class="control">
+                                <input class="input short-input" type="text" placeholder="Ejemplo: Toyota">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Modelo del Auto</label>
+                            <div class="control">
+                                <input class="input short-input" type="text" placeholder="Ejemplo: Corolla">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Año del Auto</label>
+                            <div class="control">
+                                <input class="input short-input" type="number" placeholder="Ejemplo: 2020">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Garantía Elegida</label>
+                            <div class="control">
+                                <select class="input short-input" name="garantia-elegida">
+                                    <option value="">Seleccione una garantía</option>
+                                    <option value="fabrica-garantizada">Garantía de Fábrica Garantizada</option>
+                                    <option value="servicio-posventa">Garantía de Servicio Posventa</option>
+                                    <option value="mantenimiento-preventivo">Garantía de Mantenimiento Preventivo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="button is-primary" type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="column">
+                    <!-- Imagen al lado del formulario -->
+                    <img src="img/garantia.png" alt="Descripción de la imagen" width="100%" height="auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Referencia al archivo JavaScript externo -->
+    <script src="js/garantias.js"></script>
+    <script src="js/bulma-carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <div id="footer-container"></div>
+</body>
+</html>
