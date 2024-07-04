@@ -1,154 +1,141 @@
 <!DOCTYPE html>
-  <html lang="es">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Galería</title>
-      <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-      <link rel="stylesheet" href="css/bulma.css">
-      <link rel="stylesheet" href="css/footer.css">
-  </head>
-  <body>
-      <header class="bg-dark py-3">
-          <div class="container">              
-              <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                  <a class="navbar-item" href="index.html">
-                  <img src="img/baglogo.png" alt="Logo de Nuestros Autos" width="50" height="40"> <!-- Ajusta el tamaño según sea necesario -->
-    
-                  <h1 class="title is-4">BAGBAC CARS</h1>
-                  </a>
-              
-                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                  </a>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/bulma/css/bulma.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <style>
+        .luxury-vehicle {
+            padding: 20px; /* Ajusta el valor según sea necesario */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            margin: 10px;
+        }
+        .card img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card .content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark py-3">
+        <div class="container">              
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                <img src="img/minilogo.png" alt="Logo de Nuestros Autos" width="50" height="40"> <!-- Ajusta el tamaño según sea necesario -->
+                 <h1> BAGBAC </h1>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+              </div>
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <a class="navbar-item" href="index.html">Home</a>
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">Más</a>
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item" href="login.html">Registro</a>
+                      <a class="navbar-item" href="clasificados.html">Clasificados</a>
+                      <a class="navbar-item" href="fichas_tecnicas.html">Fichas Técnicas</a>
+                      <hr class="navbar-divider">
+                      <a class="navbar-item" href="autos.html">Detalles de Autos</a>
+                    </div>
+                  </div>
                 </div>
-              
-                <div id="navbarBasicExample" class="navbar-menu">
-                  <div class="navbar-start">
-                    <a class="navbar-item" href="index.html">
-                      Home
-                    </a>
-              
-                    <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link">
-                        Más
-                      </a>
-              
-                      <div class="navbar-dropdown">
-                        <a class="navbar-item" href="fichas_tecnicas.html">
-                          Fichas Técnicas
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item" href="autos.html">
-                          Detalles de Autos
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="navbar-end">
-                    <div class="navbar-item">
+                <div class="navbar-end">
+                  <div class="navbar-item">
+                    <div class="buttons">
+                      <a id="login-button" class="button is-primary"><strong>Iniciar Sesión</strong></a>
                       <div class="buttons">
-                        <a id="login-button" class="button is-primary">
-                          <strong>Iniciar Sesión</strong>
-                        </a>
-                        <div class="buttons">
-                          <a id="register-button" class="button is-light">
-                            <strong>Registrarse</strong>
-                          </a>
-                        </div>
+                        <a id="register-button" class="button is-light"><strong>Registrarse</strong></a>
                       </div>
                     </div>
                   </div>
-              </nav>
-          </div>
-          
-      </header>
-      <div class="gallery">
-          <div class="card">
-              <div class="content has-text-centered">
-                  <p>BMW X6, Mod. 2022</p>
-                  <a href="#" onclick="verDetalleAuto(1)"><img src="img/pngegg (1).png" alt="Preview"></a>
-                  <br />
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
               </div>
-          </div>
-          <div class="card">
-              <div class="content has-text-centered">
-                  <p>BMW X6, Mod.2022</p>
-                  <a href="#" onclick="verDetalleAuto(2)"><img src="img/pngegg (2).png" alt="Preview"></a>
-                  <br />
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-          </div>
-          <div class="card">
-              <div class="content has-text-centered">
-                  <p>Toyota Hilux, Mod. 2024</p>
-                  <a href="#" onclick="verDetalleAuto(3)"><img src="img/pngegg (8).png" alt="Preview"></a>
-                  <br />
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-          </div>
-          <div class="card">
-              <div class="content has-text-centered">
-                  <p>BMW X6, Mod. 2023</p>
-                  <a href="#" onclick="verDetalleAuto(4)"><img src="img/pngegg.png" alt="Preview"></a>
-                  <br />
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-          </div>
-      </div>
-
-      <script>
-          function verDetalleAuto(id) {
-              // Aquí redirige a la página de detalle del auto seleccionado
-              window.location.href = "autos.html?id=" + id;
-          }
-      </script>       
-      <div id="footer-placeholder"></div> <!-- Aquí se cargará el footer -->
-      <script>
-              // Cargar el footer desde footer.html
-              fetch('footer.html')
-                  .then(response => response.text())
-                  .then(data => {
-                      document.getElementById('footer-placeholder').innerHTML = data;
-                      document.getElementById("year").innerHTML = new Date().getFullYear(); // Actualizar el año
-                  });
-        </script>
+            </nav>
+        </div>
+    </header>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          // Obtener los botones de Iniciar Sesión y Registrarse
-          const loginButton = document.getElementById('login-button');
-          const registerButton = document.getElementById('register-button');
-        console.log(loginButton);
-          // Evento Iniciar Sesión
-          function handleLoginClick(event) {
-              event.preventDefault(); 
-              window.location.href = 'login.html'; // Redirigir al formulario de ingreso
-          }
-      
-          // Función registrarse
-          function handleRegisterClick(event) {
-              event.preventDefault(); 
-              window.location.href = 'registro.html'; // Redirigir al formulario de registro
-          }
-      
-          // Asignar las funciones de manejo de eventos a los botones correspondientes
-          if (loginButton) loginButton.addEventListener('click', handleLoginClick);
-          if (registerButton) registerButton.addEventListener('click', handleRegisterClick);
-      });
-      </script>
-      
-            
-  </body>
+        // Script para manejar el botón de hamburguesa en dispositivos móviles
+        document.addEventListener('DOMContentLoaded', () => {
+            // Obtén todos los elementos "navbar-burger"
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Verifica si hay algún "navbar-burger"
+            if ($navbarBurgers.length > 0) {
+                // Añade un evento de clic a cada "navbar-burger"
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        // Obtén el objetivo del "navbar-burger"
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Alterna las clases "is-active"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+
+        function verDetalleAuto(id) {
+            // Aquí redirige a la página de detalle del auto seleccionado
+            window.location.href = "autos.html?id=" + id;
+        }
+    </script>    
+    <div class="gallery">
+        <div class="card">
+            <div class="content">
+                <p>BMW X6, Mod. 2022 </p>
+                <a href="#" onclick="verDetalleAuto(1)"><img src="img/pngegg (1).png" alt="Preview"></a>
+                <br />
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <p>BMW X6, Mod.2022</p>
+                <a href="#" onclick="verDetalleAuto(2)"><img src="img/pngegg (2).png" alt="Preview"></a>
+                <br />
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <p>Toyota Hilux, Mod. 2024</p>
+                <a href="#" onclick="verDetalleAuto(3)"><img src="img/pngegg (8).png" alt="Preview"></a>
+                <br />
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <p>BMW X6, Mod. 2023</p>
+                <a href="#" onclick="verDetalleAuto(4)"><img src="img/pngegg.png" alt="Preview"></a>
+                <br />
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark py-3">
+        <div class="container">
+            <p class="text-white">© <span id="year"></span> Tu Concesionaria de Autos</p>
+        </div>
+    </footer>
+</body>
 </html>
-
-
-
-
-
