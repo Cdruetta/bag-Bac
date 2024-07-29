@@ -9,7 +9,7 @@ const validarRegistro = (usuario, contrasena, telefono, direccion, dni) => {
     }
 
     // Validación de la contraseña
-    const contrasenaRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{9,}$/;
+    const contrasenaRegex = /^(?=.*[A-Za-z])(?=.*\d){9,}$/;
     if (!contrasenaRegex.test(contrasena)) {
         alert('La contraseña debe tener al menos 9 caracteres, incluyendo letras y números.');
         return false;
