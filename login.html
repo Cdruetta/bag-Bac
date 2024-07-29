@@ -1,105 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LOGIN</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/bulma.css" />
-  </head>
-  <body class="is-flex is-fullheight">
-    <section class="hero is-dark is-fullheight bg-dark">
-      <nav class="navbar is-dark">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-            <img
-              src="img/baglogo.png"
-              alt="Logo de Nuestros Autos"
-              width="50"
-              height="40"
-            />
-            <h1 class="title is-4">BAGBAC CARS</h1>
-          </a>
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a
-                  id="register-button"
-                  class="button is-light"
-                  href="registro.html"
-                >
-                  <strong>Registrarse</strong>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar Sesión</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/bulma.css">
+    </head>
+    <body class="is-flex is-fullheight">
+        <section class="hero is-dark is-fullheight bg-dark">
+            <header class="bg-dark py-3">
+                <div class="container">              
+                    <nav class="navbar" role="navigation" aria-label="main navigation">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" href="index.html">
+                                <img src="img/minilogo.png" alt="Logo de Nuestros Autos" width="50" height="40">
+                                <h1> BAGBAC </h1>
+                            </a>
+                            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div id="navbarBasicExample" class="navbar-menu">
+                            <div class="navbar-start">
+                                <a class="navbar-item" href="index.html">Home</a>
+                                <div class="navbar-item has-dropdown is-hoverable">
+                                    <a class="navbar-link">Más</a>
+                                    <div class="navbar-dropdown">
+                                        <a class="navbar-item" href="login.html">Registro</a>
+                                        <a class="navbar-item" href="clasificados.html">Clasificados</a>
+                                        <a class="navbar-item" href="fichas_tecnicas.html">Fichas Técnicas</a>
+                                        <hr class="navbar-divider">
+                                        <a class="navbar-item" href="autos.html">Detalles de Autos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar-end">
+                                <div class="navbar-item">
+                                    <div class="buttons">
+                                        <a id="login-button" class="button is-primary"><strong>Iniciar Sesión</strong></a>
+                                        <a id="register-button" href="registro.html" class="button is-light"><strong>Registrarse</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <form id="formularioInicioSesion" class="box" style="max-width: 600px; margin: 0 auto;">
+                        <h1 class="title">Ingresar</h1>
+                        <div class="field mb-4">
+                            <label class="label">Nombre de Usuario</label>
+                            <div class="control">
+                            <input id="loginUsuario" class="input" type="text" placeholder="Ingrese su nombre de Usuario" required>
+                        </div>
 
-      <section class="hero is-dark is-fullheight bg-dark">
-        <div class="hero-body">
-          <div class="container">
-            <div class="form-container">
-              <h1 class="title">Iniciar Sesión</h1>
-              <form action="/ruta-de-tu-servidor/login" method="post">
-                <div class="field">
-                  <label class="label">Correo Electrónico</label>
-                  <div class="control">
-                    <input
-                      class="input"
-                      type="email"
-                      placeholder="ejemplo@dominio.com"
-                      required
-                    />
-                  </div>
+                        <div class="field mt-4">
+                            <label class="label">Contraseña</label>
+                            <div class="control">
+                                <input id="loginContrasena" class="input" type="password" placeholder="********" required>
+                            </div>
+                        </div>
+                        <div class = "field mb-4">
+                            <label class="checkbox">
+                                <input type="checkbox" />
+                                Recuerdame
+                            </label>
+                        </div>
+                        <button type="submit" class="button is-primary">Ingresar</button>
+                    </form>
+                    
                 </div>
-                <div class="field">
-                  <label class="label">Contraseña</label>
-                  <div class="control">
-                    <input
-                      class="input"
-                      type="password"
-                      placeholder="**********"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="control">
-                    <button class="button is-primary" type="submit">
-                      Iniciar Sesión
-                    </button>
-                  </div>
-                </div>
-              </form>
             </div>
-          </div>
-        </div>
-      </section>
-    </section>
+        </section>
+        <script>
+            // Script para manejar el botón de hamburguesa en dispositivos móviles
+            document.addEventListener('DOMContentLoaded', () => {
+                // Obtén todos los elementos "navbar-burger"
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-    <div id="footer-container"></div>
-    <script src="js/main.js"></script>
-  </body>
+                // Verifica si hay algún "navbar-burger"
+                if ($navbarBurgers.length > 0) {
+                    // Añade un evento de clic a cada "navbar-burger"
+                    $navbarBurgers.forEach(el => {
+                        el.addEventListener('click', () => {
+                            // Obtén el objetivo del "navbar-burger"
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+
+                            // Alterna las clases "is-active"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+                        });
+                    });
+                }
+            });
+        </script>
+        <script src="js/login.js"></script>
+        
+    </body>
 </html>
+
