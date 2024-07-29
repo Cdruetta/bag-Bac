@@ -1,56 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Iniciar Sesión</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/bulma.css">
-    </head>
-    <body class="is-flex is-fullheight">
-        <section class="hero is-dark is-fullheight bg-dark">
-            <header class="bg-dark py-3">
-                <div class="container">              
-                    <nav class="navbar" role="navigation" aria-label="main navigation">
-                        <div class="navbar-brand">
-                            <a class="navbar-item" href="index.html">
-                                <img src="img/minilogo.png" alt="Logo de Nuestros Autos" width="50" height="40">
-                                <h1> BAGBAC </h1>
-                            </a>
-                            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <div id="navbarBasicExample" class="navbar-menu">
-                            <div class="navbar-start">
-                                <a class="navbar-item" href="index.html">Home</a>
-                                <div class="navbar-item has-dropdown is-hoverable">
-                                    <a class="navbar-link">Más</a>
-                                    <div class="navbar-dropdown">
-                                        <a class="navbar-item" href="login.html">Registro</a>
-                                        <a class="navbar-item" href="clasificados.html">Clasificados</a>
-                                        <a class="navbar-item" href="fichas_tecnicas.html">Fichas Técnicas</a>
-                                        <hr class="navbar-divider">
-                                        <a class="navbar-item" href="autos.html">Detalles de Autos</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="navbar-end">
-                                <div class="navbar-item">
-                                    <div class="buttons">
-                                        <a id="login-button" class="button is-primary"><strong>Iniciar Sesión</strong></a>
-                                        <a id="register-button" href="registro.html" class="button is-light"><strong>Registrarse</strong></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAGBAC CARS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="css/bulma.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <br>
+    <header class="bg-dark py-3">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img
+                src="img/baglogo.png"
+                alt="Logo de Nuestros Autos"
+                width="50"
+                height="40"
+              />
+              <h1 class="title is-4">BAGBAC CARS</h1>
+            </a>
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Más</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="clasificados.html"
+                    >Clasificados</a
+                  >
+                  <a class="navbar-item" href="garantias.html"
+                    >garantias</a
+                  >
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item" href="autos.html">Detalles de Autos</a>
                 </div>
-            </header>
+              </div>
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a
+                    id="seguros-button"
+                    class="button is-primary is-outlined"
+                    href="clasificados.html"
+                    ><strong>0km</strong></a
+                  >
+                  <a
+                    id="postventa-button"
+                    class="button is-primary is-outlined"
+                    href="garantias.html"
+                    ><strong>Garantias</strong></a
+                  >
+                  <a
+                    id="usados-button"
+                    class="button is-primary is-outlined"
+                    href="#"
+                    ><strong>Post Venta</strong></a>
+                  <a
+                    id="usados-button"
+                    class="button is-primary is-outlined"
+                    href="#"
+                    ><strong>Seguros</strong></a
+                  >
+                  
+                </div>
+              </div>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a
+                    id="login-button"
+                    class="button is-success"
+                    href="login.html"
+                    ><strong>Iniciar Sesión</strong></a
+                  >
+                  <a
+                    id="register-button"
+                    class="button is-light"
+                    href="registro.html"
+                    ><strong>Registrarse</strong></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <form id="formularioInicioSesion" class="box" style="max-width: 600px; margin: 0 auto;">
