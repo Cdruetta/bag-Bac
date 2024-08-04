@@ -1,0 +1,141 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Títulos */
+  .title {
+    color: #f3eaea; /* Cambia el color a negro o al color que prefieras */
+  }
+  
+  /* Espacio entre comentarios */
+  article.media {
+    margin: 0; /* Elimina el margen entre los comentarios */
+    padding: 1rem 0; /* Agrega padding si es necesario */
+    border-bottom: 1px solid #f7f0f0; /* Opcional: separador visual entre comentarios */
+  }
+  
+  /* Ajustar el contenedor de los comentarios */
+  .media-content .content {
+    margin: 0; /* Elimina márgenes internos */
+    padding: 0; /* Elimina padding interno */
+  }
+  
+  /* Espacio y ajuste de imágenes en comentarios */
+  .media-left .image {
+    margin: 0; /* Elimina margen alrededor de las imágenes */
+  }
+  
+  /* Contenido del formulario de comentarios */
+  .media-content .field {
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina padding */
+  }
+  
+  /* Ajustes adicionales para el formulario de comentarios */
+  textarea.textarea {
+    margin-top: 0;
+    margin-bottom: 1rem; /* Espacio debajo del textarea */
+  }
+  
+  /* Estilo de los botones en el formulario de comentarios */
+  .level-item .button {
+    margin-top: 0;
+  }
+  
+  /* Estilo del área de comentarios */
+  .comments-section {
+    background-color: rgb(236, 235, 235);
+    padding: 1rem; /* Ajusta el padding según sea necesario */
+    border-radius: 5px; /* Opcional: agrega bordes redondeados */
+  }
+  
+  /* Ajustar el pie de página */
+  .footer {
+    background-color: #fdfafa; /* Color de fondo del pie de página */
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #f7f6f6; /* Opcional: separador visual */
+  }
+  /* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Títulos */
+  .title {
+    color: #b3acac; /* Cambia el color a negro o al color que prefieras */
+  }
+  
+  /* Espacio entre comentarios */
+  article.media {
+    margin: 0; /* Elimina el margen entre los comentarios */
+    padding: 1rem 0; /* Agrega padding si es necesario */
+    border-bottom: 1px solid #ddd; /* Opcional: separador visual entre comentarios */
+    background-color: #ffffff; /* Cambia el color de fondo de los comentarios a blanco */
+  }
+  
+  /* Ajustar el contenedor de los comentarios */
+  .media-content .content {
+    margin: 0; /* Elimina márgenes internos */
+    padding: 0; /* Elimina padding interno */
+    color: #6d6a6a; /* Cambia el color del texto de los comentarios a negro */
+  }
+  
+  /* Espacio y ajuste de imágenes en comentarios */
+  .media-left .image {
+    margin: 0; /* Elimina margen alrededor de las imágenes */
+  }
+  
+  /* Contenido del formulario de comentarios */
+  .media-content .field {
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina padding */
+  }
+  
+  /* Ajustes adicionales para el formulario de comentarios */
+  textarea.textarea {
+    margin-top: 0;
+    margin-bottom: 1rem; /* Espacio debajo del textarea */
+  }
+  
+  /* Estilo de los botones en el formulario de comentarios */
+  .level-item .button {
+    margin-top: 0;
+  }
+  
+  /* Estilo del área de comentarios */
+  .comments-section {
+    background-color: white;
+    padding: 1rem; /* Ajusta el padding según sea necesario */
+    border-radius: 5px; /* Opcional: agrega bordes redondeados */
+    color: #fff7f7; /* Cambia el color del texto de los comentarios a negro */
+  }
+  
+  /* Ajustar el pie de página */
+  .footer {
+    background-color: #f5f5f5; /* Color de fondo del pie de página */
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Opcional: separador visual */
+  }
+  .comentario {
+    background-color: #f0f0f0; /* Un gris más claro */
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  .comentario {
+    background-color: transparent; /* Para eliminar el fondo por completo */
+    border: 1px solid #ddd; /* Agregar un borde para separar los comentarios */
+    padding: 10px;
+  }
+  .comentario {
+    background-color: #f0f0f0; /* Un gris más claro */
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+    

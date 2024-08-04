@@ -1,0 +1,147 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff; /* Letras blancas */
+}
+
+/* Ajustar el color del texto dentro de elementos específicos */
+h1, h2, h3, p, a {
+    color: #fff; /* Letras blancas */
+}
+
+/* Estilos para secciones específicas */
+.hero {
+    background-color: #8b929b; /* Azul */
+    color: white;
+}
+
+.section {
+    padding: 50px;
+    background-color: #444; /* Fondo gris más claro */
+}
+
+/* Ajustar el color del texto dentro de elementos específicos en las secciones */
+.section h1, .section h2, .section h3, .section p, .section a {
+    color: #fff; /* Letras blancas */
+}
+
+/* Estilos para elementos específicos */
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Otros estilos específicos */
+.box {
+    border: 1px solid #383737;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #555; /* Fondo gris más claro */
+    color: #fff; /* Letras blancas */
+}
+
+.box h2, .box p, .box a {
+    color: #fff; /* Letras blancas */
+}
+
+.carousel {
+    border: 2px solid #5f5c5c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(88, 88, 88, 0.2);
+    background-color: #423f3f; /* Fondo gris más claro */
+}
+
+.carousel-item img {
+    display: block;
+}
+
+button {
+    background-color: rgba(24, 23, 23, 0.5); /* Fondo blanco semi-transparente */
+    color: rgb(114, 111, 111); /* Letras negras */
+}
+
+/* Ajustar márgenes y padding globales */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ajustar espacio entre los comentarios */
+  article.media {
+    margin-bottom: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #646262; /* Opcional: para separar visualmente los comentarios */
+  }
+  
+  /* Ajustar contenedor de comentarios */
+  .article.media {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ajustar figuras de imágenes */
+  .media-left .image {
+    margin-bottom: 0;
+  }
+  
+  /* Ajustar espacio de contenido */
+  .media-content .content {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  /* Ajustar espacio en el control de campo */
+  .media-content .field {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+ /* Ajustar márgenes y padding globales */
+ body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Ajustar espacio entre los comentarios */
+  article.media {
+    margin-bottom: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #4d4949; /* Opcional: para separar visualmente los comentarios */
+  }
+
+  /* Ajustar contenedor de comentarios */
+  .article.media {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Ajustar figuras de imágenes */
+  .media-left .image {
+    margin-bottom: 0;
+  }
+
+  /* Ajustar espacio de contenido */
+  .media-content .content {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* Ajustar espacio en el control de campo */
+  .media-content .field {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* Fondo blanco para los comentarios */
+  .comments-section {
+    background-color: white;
+    padding: 1rem;}  
+
+    /* Ajustar color del título */
+  .title {
+    color: #615e5e; /* Cambia el color a negro o al color que prefieras */
+  }
