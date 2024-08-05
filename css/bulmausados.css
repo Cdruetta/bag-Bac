@@ -1,0 +1,20 @@
+/* Importación de Bulma */
+@import url('https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css');
+
+/* Estilos personalizados */
+body .custom-rounded {
+    border-radius: 8px;
+}
+
+body .has-background-primary-05.has-text-primary-05-invert {
+    background-color: rgba(48, 131, 175, 0.05); /* Fondo */
+    color: #05A6D6; /* Texto invertido */
+}
+
+/* Estilo personalizado para limitar el ancho del formulario */
+.form-container {
+    max-width: 400px; /* Puedes ajustar este valor según tus necesidades */
+    margin: auto; /* Centra el formulario horizontalmente */
+    padding: 20px; /* Espacio interior del contenedor */
+}
+

@@ -1,0 +1,86 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Fondo gris oscuro */
+    color: #000; /* Letras negras */
+}
+
+/* Ajustar el color del texto dentro de elementos específicos */
+h1, h2, h3, p, a {
+    color: #000; /* Letras negras */
+}
+
+/* Estilos para secciones específicas */
+.hero {
+    background-color: #8b929b; /* Azul */
+    color: black; /* Letras negras */
+    position: relative;
+}
+
+/* Ajustes para el carrusel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 520px; /* Ajusta la altura según sea necesario */
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    flex: 0 0 auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+
+/* Sección principal */
+.section {
+    padding: 50px;
+    background-color: #444; /* Fondo gris más claro */
+}
+
+/* Ajustar el color del texto dentro de elementos específicos en las secciones */
+.section h1, .section h2, .section h3, .section p, .section a {
+    color: #000; /* Letras negras */
+}
+
+/* Estilos para encabezados y párrafos */
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.5;
+}
