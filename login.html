@@ -3,25 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BAGBAC CARS</title>
+    <title>Galería</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
     />
-    <link rel="stylesheet" href="css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="/bulma/css/bulma.css" />
     <link rel="stylesheet" href="css/bulma.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .luxury-vehicle {
+        padding: 20px; /* Ajusta el valor según sea necesario */
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card {
+        margin: 10px;
+      }
+      .card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .card .content {
+        text-align: center;
+      }
+    </style>
   </head>
-  <br>
+  <body>
     <header class="bg-dark py-3">
       <div class="container">
         <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -55,9 +75,7 @@
                   <a class="navbar-item" href="clasificados.html"
                     >Clasificados</a
                   >
-                  <a class="navbar-item" href="garantias.html"
-                    >garantias</a
-                  >
+
                   <hr class="navbar-divider" />
                   <a class="navbar-item" href="autos.html">Detalles de Autos</a>
                 </div>
@@ -68,7 +86,7 @@
                     id="seguros-button"
                     class="button is-primary is-outlined"
                     href="clasificados.html"
-                    ><strong>0km</strong></a
+                    ><strong>0Km</strong></a
                   >
                   <a
                     id="postventa-button"
@@ -77,17 +95,17 @@
                     ><strong>Garantias</strong></a
                   >
                   <a
-                    id="usados-button"
+                    id="usados-button-1"
                     class="button is-primary is-outlined"
-                    href="#"
-                    ><strong>Post Venta</strong></a>
+                    href="usados.html"
+                    ><strong>Usados</strong></a
+                  >
                   <a
-                    id="usados-button"
+                    id="seguros-button"
                     class="button is-primary is-outlined"
-                    href="#"
+                    href="seguros.html"
                     ><strong>Seguros</strong></a
                   >
-                  
                 </div>
               </div>
             </div>
@@ -113,59 +131,79 @@
         </nav>
       </div>
     </header>
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <form id="formularioInicioSesion" class="box" style="max-width: 600px; margin: 0 auto;">
-                        <h1 class="title">Ingresar</h1>
-                        <div class="field mb-4">
-                            <label class="label">Nombre de Usuario</label>
-                            <div class="control">
-                            <input id="loginUsuario" class="input" type="text" placeholder="Ingrese su nombre de Usuario" required>
-                        </div>
+    <script>
+      // Script para manejar el botón de hamburguesa en dispositivos móviles
+      document.addEventListener("DOMContentLoaded", () => {
+        // Obtén todos los elementos "navbar-burger"
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
 
-                        <div class="field mt-4">
-                            <label class="label">Contraseña</label>
-                            <div class="control">
-                                <input id="loginContrasena" class="input" type="password" placeholder="********" required>
-                            </div>
-                        </div>
-                        <div class = "field mb-4">
-                            <label class="checkbox">
-                                <input type="checkbox" />
-                                Recuerdame
-                            </label>
-                        </div>
-                        <button type="submit" class="button is-primary">Ingresar</button>
-                    </form>
-                    
-                </div>
-            </div>
-        </section>
-        <script>
-            // Script para manejar el botón de hamburguesa en dispositivos móviles
-            document.addEventListener('DOMContentLoaded', () => {
-                // Obtén todos los elementos "navbar-burger"
-                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        // Verifica si hay algún "navbar-burger"
+        if ($navbarBurgers.length > 0) {
+          // Añade un evento de clic a cada "navbar-burger"
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Obtén el objetivo del "navbar-burger"
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
 
-                // Verifica si hay algún "navbar-burger"
-                if ($navbarBurgers.length > 0) {
-                    // Añade un evento de clic a cada "navbar-burger"
-                    $navbarBurgers.forEach(el => {
-                        el.addEventListener('click', () => {
-                            // Obtén el objetivo del "navbar-burger"
-                            const target = el.dataset.target;
-                            const $target = document.getElementById(target);
-
-                            // Alterna las clases "is-active"
-                            el.classList.toggle('is-active');
-                            $target.classList.toggle('is-active');
-                        });
-                    });
-                }
+              // Alterna las clases "is-active"
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
             });
-        </script>
-        <script src="js/login.js"></script>
-        
-    </body>
-</html>
+          });
+        }
+      });
 
+      function verDetalleAuto(id) {
+        // Aquí redirige a la página de detalle del auto seleccionado
+        window.location.href = "autos.html?id=" + id;
+      }
+    </script>
+    <div class="gallery">
+      <div class="card">
+        <div class="content">
+          <p>Camaro Zl1, Mod. 2022</p>
+          <a href="#" onclick="verDetalleAuto(1)"
+            ><img src="img/camaro1.png" alt="Preview"
+          /></a>
+          <br />
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Corvette Stingray, Mod.2022</p>
+          <a href="#" onclick="verDetalleAuto(2)"
+            ><img src="img/corvette3.png" alt="Preview"
+          /></a>
+          <br />
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Toyota Hilux, Mod. 2024</p>
+          <a href="#" onclick="verDetalleAuto(3)"
+            ><img src="img/pngegg (8).png" alt="Preview"
+          /></a>
+          <br />
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>BMW X6, Mod. 2023</p>
+          <a href="#" onclick="verDetalleAuto(4)"
+            ><img src="img/pngegg (2).png" alt="Preview"
+          /></a>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="js/bulma-carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

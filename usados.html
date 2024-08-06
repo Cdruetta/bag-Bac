@@ -1,63 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autos Usados - BAGBAC CARS</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    <link rel="stylesheet" href="css/bulma.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/usados.css">
-</head>
-<body>
-    <header class="bg-dark py-3">
-        <div class="container">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BAGBAC CARS</title>
+        <link
+          href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+        />
+        <link rel="stylesheet" href="css/bulma-carousel.min.css" />
+        <link rel="stylesheet" href="css/bulma.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+      </head>
+      <body>
+        <header class="bg-dark py-3">
+          <div class="container">
             <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="index.html">
-                        <img src="img/minilogo.png" alt="Logo de Nuestros Autos" width="50" height="40">
-                        <h1 class="title is-4">BAGBAC</h1>
-                    </a>
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-                <div id="navbarBasicExample" class="navbar-menu">
-                    <div class="navbar-start">
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link">Más</a>
-                            <div class="navbar-dropdown">
-                                <a class="navbar-item" href="clasificados.html">Clasificados</a>
-                                <a class="navbar-item" href="fichas_tecnicas.html">Fichas Técnicas</a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item" href="autos.html">Detalles de Autos</a>
-                            </div>
-                        </div>
-                        <div class="navbar-item">
-                            <div class="buttons">
-                                <a id="seguros-button" class="button is-primary is-outlined" href="clasificados.html"><strong>Usados</strong></a>
-                                <a id="postventa-button" class="button is-primary is-outlined" href="#"><strong>Post Venta</strong></a>
-                                <a id="usados-button" class="button is-primary is-outlined" href="#"><strong>Seguros</strong></a>
-                            </div>
-                        </div>
+              <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                  <img
+                    src="img/baglogo.png"
+                    alt="Logo de Nuestros Autos"
+                    width="50"
+                    height="40"
+                  />
+                  <h1 class="title is-4">BAGBAC CARS</h1>
+                </a>
+                <a
+                  role="button"
+                  class="navbar-burger"
+                  aria-label="menu"
+                  aria-expanded="false"
+                  data-target="navbarBasicExample"
+                >
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+              </div>
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">Más</a>
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item" href="clasificados.html"
+                        >Clasificados</a
+                      >
+                      <hr class="navbar-divider" />
+                      <a class="navbar-item" href="autos.html">Detalles de Autos</a>
                     </div>
-
-                    <div class="navbar-end">
-                        <div class="navbar-item">
-                            <div class="buttons">
-                                <a id="login-button" class="button is-success" href="login.html"><strong>Iniciar Sesión</strong></a>
-                                <a id="register-button" class="button is-light" href="registro.html"><strong>Registrarse</strong></a>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="navbar-item">
+                    <div class="buttons">
+                      <a
+                        id="seguros-button"
+                        class="button is-primary is-outlined"
+                        href="clasificados.html"
+                        ><strong>0Km</strong></a
+                      >
+                      <a
+                        id="postventa-button"
+                        class="button is-primary is-outlined"
+                        href="garantias.html"
+                        ><strong>Garantias</strong></a
+                      >
+                      <a
+                        id="usados-button-1"
+                        class="button is-primary is-outlined"
+                        href="usados.html"
+                        ><strong>Usados</strong></a
+                      >
+                      <a
+                        id="seguros-button"
+                        class="button is-primary is-outlined"
+                        href="seguros.html"
+                        ><strong>Seguros</strong></a
+                      >
                     </div>
+                  </div>
                 </div>
+                <div class="navbar-end">
+                  <div class="navbar-item">
+                    <div class="buttons">
+                      <a
+                        id="login-button"
+                        class="button is-success"
+                        href="login.html"
+                        ><strong>Iniciar Sesión</strong></a
+                      >
+                      <a
+                        id="register-button"
+                        class="button is-light"
+                        href="registro.html"
+                        ><strong>Registrarse</strong></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </nav>
-        </div>
-    </header>
+          </div>
+        </header>
+        <marquee class="title is-4">------ Tenemos los mejores usados para vos ------ Tenemos los mejores usados para vos ------</marquee>
 
     <!-- Sección del Carrusel -->
     <section class="hero">
@@ -267,14 +320,10 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>© 2023 BAGBAC CARS</strong> Todos los derechos reservados.
-            </p>
-        </div>
-    </footer>
+    
+        <div id="footer-container"></div>
 
-    <script src="js/usados.js"></script>
+        <script src="js/bulma-carousel.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 </html>

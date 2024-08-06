@@ -133,5 +133,25 @@ button.is-small.is-info {
   box-shadow: none !important;
 }
 
+.luxury-vehicle {
+  padding: 20px; /* Ajusta el valor según sea necesario */
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  margin: 10px;
+}
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card .content {
+  text-align: center;
+}
+
 
 
