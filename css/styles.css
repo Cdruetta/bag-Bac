@@ -170,6 +170,12 @@ button.is-small.is-info {
   font-size: 20px;
   color: #fff;
 }
+.footer .copyright {
+  margin-top: 1rem; /* Espaciado arriba */
+  font-size: 0.875rem; /* Ajusta el tamaño de fuente si es necesario */
+  color: #ddd; /* Ajusta el color si es necesario */
+}
+
 
 
 
