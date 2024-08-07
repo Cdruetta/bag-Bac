@@ -1,50 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <!-- Metadatos y enlaces a hojas de estilo y scripts -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BAGBAC CARS</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
-  <link rel="stylesheet" href="css/bulma-carousel.min.css" />
-  <link rel="stylesheet" href="css/bulma.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/seguros.css" />
-  <link rel="stylesheet" href="css/styles_seguros.css" />
-
-  <script defer src="js/app.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <!-- Barra de navegación -->
-  <nav class="navbar">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="#"></a>
-      <div class="navbar-burger" data-target="navbarMenu"></div>
-    </div>
-  </nav>
-
-  <!-- Sección del encabezado principal -->
-  <header class="bg-dark py-3">
-    <div class="container">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-            <img src="img/baglogo.png" alt="Logo de Nuestros Autos" width="50" height="40">
-            <h1 class="title is-4">BAGBAC</h1>
-          </a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAGBAC CARS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="css/bulma.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="bg-dark py-3">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img
+                src="img/baglogo.png"
+                alt="Logo de Nuestros Autos"
+                width="50"
+                height="40"
+              />
+              <h1 class="title is-4">BAGBAC CARS</h1>
+            </a>
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Más</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="clasificados.html"
+                    >Clasificados</a
+                  >
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item" href="autos.html">Detalles de Autos</a>
+                </div>
+              </div>
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a
+                    id="seguros-button"
+                    class="button is-primary is-outlined"
+                    href="clasificados.html"
+                    ><strong>0Km</strong></a
+                  >
+                  <a
+                    id="postventa-button"
+                    class="button is-primary is-outlined"
+                    href="garantias.html"
+                    ><strong>Garantias</strong></a
+                  >
+                  <a
+                    id="usados-button-1"
+                    class="button is-primary is-outlined"
+                    href="usados.html"
+                    ><strong>Usados</strong></a
+                  >
+                  <a
+                    id="seguros-button"
+                    class="button is-primary is-outlined"
+                    href="seguros.html"
+                    ><strong>Seguros</strong></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a
+                    id="login-button"
+                    class="button is-success"
+                    href="login.html"
+                    ><strong>Iniciar Sesión</strong></a
+                  >
+                  <a
+                    id="register-button"
+                    class="button is-light"
+                    href="registro.html"
+                    ><strong>Registrarse</strong></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
   <!-- Encabezado hero para seguros de autos -->
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">Te ayudamos a elegir lo mejor para vos</h1>
+        <marquee class="title is-4">------ Contamos con los mejores seguros del pais ------ Contamos con los mejores seguros del pais ------</marquee>
       </div>
     </div>
   </header>
@@ -150,101 +219,80 @@
     </div>
   </section>
 
-  <!-- Sección de comentarios de usuarios -->
-  <article class="media">
-    <figure class="media-left">
-      <p class="image is-64x64">
-        <img src="img/rita.jpg" />
-      </p>
-    </figure>
-    <div class="media-content">
-      <div class="content">
-        <p>
-          <strong>Rita Ullate</strong> <small>@riullate</small> <small>31m</small>
-          <br />
-          Me sirvió mucho el artículo, les agradezco mucho por hablar sobre esta compañía
-        </p>
-      </div>
-    </div>
-  </article>
-
-  <article class="media">
-    <figure class="media-left">
-      <p class="image is-64x64">
-        <img src="img/matias.jpg" />
-      </p>
-    </figure>
-    <div class="media-content">
-      <div class="content">
-        <p>
-          <strong>Matias Gentile</strong> <small>@mati1997</small> <small>2 dias</small>
-          <br />
-          Yo tengo La Caja, y no me puedo quejar mucho. Este año fue la primera vez que tuve que usarlo, por un accidente, y en general la atención fue rápida. Renegué bastante con el chapista, pero cuando reclamé al seguro ayudaron a apurar el tema. El auto lo tuve reparado a los 4 meses, pero el seguro al mes (mes y medio quizás) del accidente ya me había dado el ok para la reparación.
-        </p>
-      </div>
-    </div>
-  </article>
-
-  <article class="media">
-    <figure class="media-left">
-      <p class="image is-64x64">
-        <img src="img/lucas.jpg" />
-      </p>
-    </figure>
-    <div class="media-content">
-      <div class="content">
-        <p>
-          <strong>Lucas Ruartes</strong> <small>@lucas42</small> <small>1 semana</small>
-          <br />
-          Después de haber tenido un accidente con destrucción total me pase a la segunda...
-          Tengo actualmente un seguro tercero completo que me cubre cristales y neumáticos también!
-        </p>
-      </div>
-    </div>
-  </article>
-
-  <!-- Sección de formulario de comentarios -->
-  <article class="media">
-    <figure class="media-left">
-      <p class="image is-64x64">
-        <img src="img/baglogo.png" />
-      </p>
-    </figure>
-    <div class="media-content">
-      <div class="field">
-        <p class="control">
-          <textarea class="textarea" placeholder="Queremos saber tu experiencia con nuestro servicio..."></textarea>
-        </p>
-      </div>
-      <nav class="level">
-        <div class="level-left">
-          <div class="level-item">
-            <a class="button is-info">Comentar</a>
+ <!-- Sección de comentarios de usuarios -->
+<section class="section">
+  <div class="container">
+      <!-- Comentario 1 -->
+      <article class="media mb-4">
+          <figure class="media-left">
+              <p class="image is-64x64">
+                  <img src="img/rita.jpg" alt="Rita Ullate" />
+              </p>
+          </figure>
+          <div class="media-content">
+              <p><strong>Rita Ullate</strong> <small>@riullate</small> <small>31m</small><br />
+              Me sirvió mucho el artículo, les agradezco mucho por hablar sobre esta compañía.</p>
           </div>
-        </div>
-        <div class="level-right">
-          <div class="level-item">
-            <label class="checkbox">
-              <input type="checkbox" /> Nos gustaria saber tu experiencia..
-            </label>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </article>
+      </article>
 
-  
+      <!-- Comentario 2 -->
+      <article class="media mb-4">
+          <figure class="media-left">
+              <p class="image is-64x64">
+                  <img src="img/matias.jpg" alt="Matias Gentile" />
+              </p>
+          </figure>
+          <div class="media-content">
+              <p><strong>Matias Gentile</strong> <small>@mati1997</small> <small>2 días</small><br />
+              Yo tengo La Caja, y no me puedo quejar mucho. Este año fue la primera vez que tuve que usarlo, por un accidente, y en general la atención fue rápida. Renegué bastante con el chapista, pero cuando reclamé al seguro ayudaron a apurar el tema. El auto lo tuve reparado a los 4 meses, pero el seguro al mes (mes y medio quizás) del accidente ya me había dado el ok para la reparación.</p>
+          </div>
+      </article>
+
+      <!-- Comentario 3 -->
+      <article class="media mb-4">
+          <figure class="media-left">
+              <p class="image is-64x64">
+                  <img src="img/lucas.jpg" alt="Lucas Ruartes" />
+              </p>
+          </figure>
+          <div class="media-content">
+              <p><strong>Lucas Ruartes</strong> <small>@lucas42</small> <small>1 semana</small><br />
+              Después de haber tenido un accidente con destrucción total me pasé a la segunda... Tengo actualmente un seguro tercero completo que me cubre cristales y neumáticos también!</p>
+          </div>
+      </article>
+
+      <!-- Sección de formulario de comentarios -->
+      <article class="media mb-4">
+          <figure class="media-left">
+              <p class="image is-64x64">
+                  <img src="img/baglogo.png" alt="BAGBAC CARS Logo" />
+              </p>
+          </figure>
+          <div class="media-content">
+              <div class="field">
+                  <p class="control">
+                      <textarea class="textarea" placeholder="Queremos saber tu experiencia con nuestro servicio..."></textarea>
+                  </p>
+              </div>
+              <nav class="level">
+                  <div class="level-left">
+                      <a class="button is-info level-item">Comentar</a>
+                  </div>
+                  <div class="level-right">
+                      <label class="checkbox level-item">
+                          <input type="checkbox" /> Nos gustaría saber tu experiencia.
+                      </label>
+                  </div>
+              </nav>
+          </div>
+      </article>
+  </div>
+</section>
 
     <div id="footer-container"></div>
 
     <script src="js/bulma-carousel.min.js"></script>
     <script src="js/main.js"></script>
-  <!-- Pie de página -->
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>&copy; 2024 Compañía de Seguros. Todos los derechos reservados.</p>
-    </div>
-  </footer>
 
   <!-- Scripts -->
   <script>
@@ -256,5 +304,12 @@
   <script src="js/main.js"></script>
   <script src="carrusel.js"></script>
   <script src="seguros.js"></script>
+
+  <!-- Botón de subir -->
+<a href="#" id="scroll-to-top" class="button is-primary is-rounded" title="Subir" aria-label="Subir">
+  <span class="icon">
+    <i class="fas fa-chevron-up"></i>
+  </span>
+</a>
 </body>
 </html>

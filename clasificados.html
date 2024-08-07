@@ -1,188 +1,221 @@
 <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Galería</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-        <link rel="stylesheet" href="/bulma/css/bulma.css">
-        <link rel="stylesheet" href="css/bulma.css">
-        <style>
-            .luxury-vehicle {
-                padding: 20px; /* Ajusta el valor según sea necesario */
-            }
-            .gallery {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .card {
-                margin: 10px;
-            }
-            .card img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .card .content {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <header class="bg-dark py-3">
-            <div class="container">
-              <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                  <a class="navbar-item" href="index.html">
-                    <img
-                      src="img/baglogo.png"
-                      alt="Logo de Nuestros Autos"
-                      width="50"
-                      height="40"
-                    />
-                    <h1 class="title is-4">BAGBAC CARS</h1>
-                  </a>
-                  <a
-                    role="button"
-                    class="navbar-burger"
-                    aria-label="menu"
-                    aria-expanded="false"
-                    data-target="navbarBasicExample"
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="css/bulma.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <style>
+      .luxury-vehicle {
+        padding: 20px; /* Ajusta el valor según sea necesario */
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card {
+        margin: 10px;
+      }
+      .card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .card .content {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-dark py-3">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img
+                src="img/baglogo.png"
+                alt="Logo de Nuestros Autos"
+                width="50"
+                height="40"
+              />
+              <h1 class="title is-4">BAGBAC CARS</h1>
+            </a>
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Más</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="clasificados.html"
+                    >Clasificados</a
                   >
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                  </a>
+
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item" href="autos.html">Detalles de Autos</a>
                 </div>
-                <div id="navbarBasicExample" class="navbar-menu">
-                  <div class="navbar-start">
-                    <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link">Más</a>
-                      <div class="navbar-dropdown">
-                        <a class="navbar-item" href="clasificados.html"
-                          >Clasificados</a
-                        >
-                        
-                        <hr class="navbar-divider" />
-                        <a class="navbar-item" href="autos.html">Detalles de Autos</a>
-                      </div>
-                    </div>
-                    <div class="navbar-item">
-                      <div class="buttons">
-                        <a
-                          id="seguros-button"
-                          class="button is-primary is-outlined"
-                          href="clasificados.html"
-                          ><strong>0km</strong></a
-                        >
-                        <a
-                        id="postventa-button"
-                        class="button is-primary is-outlined"
-                        href="garantias.html"
-                        ><strong>Garantias</strong></a
-                        >
-                        <a
-                        id="usados-button"
-                        class="button is-primary is-outlined"
-                        href="#"
-                        ><strong>Post Venta</strong></a>
-                        <a
-                        id="usados-button"
-                        class="button is-primary is-outlined"
-                        href="#"
-                        ><strong>Seguros</strong></a
-                        >
-                        
-                    </div>
-                    </div>
+              </div>
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a
+                    id="seguros-button"
+                    class="button is-primary is-outlined"
+                    href="clasificados.html"
+                    ><strong>0Km</strong></a
+                  >
+                  <a
+                    id="postventa-button"
+                    class="button is-primary is-outlined"
+                    href="garantias.html"
+                    ><strong>Garantias</strong></a
+                  >
+                  <a
+                    id="usados-button-1"
+                    class="button is-primary is-outlined"
+                    href="usados.html"
+                    ><strong>Usados</strong></a
+                  >
+                  <a
+                    id="seguros-button"
+                    class="button is-primary is-outlined"
+                    href="seguros.html"
+                    ><strong>Seguros</strong></a
+                  >
                 </div>
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                    <div class="buttons">
-                        <a
-                        id="login-button"
-                        class="button is-success"
-                        href="login.html"
-                        ><strong>Iniciar Sesión</strong></a
-                        >
-                        <a
-                        id="register-button"
-                        class="button is-light"
-                        href="registro.html"
-                        ><strong>Registrarse</strong></a
-                        >
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </nav>
+              </div>
             </div>
-        </header>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a
+                    id="login-button"
+                    class="button is-success"
+                    href="login.html"
+                    ><strong>Iniciar Sesión</strong></a
+                  >
+                  <a
+                    id="register-button"
+                    class="button is-light"
+                    href="registro.html"
+                    ><strong>Registrarse</strong></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
     <script>
-        // Script para manejar el botón de hamburguesa en dispositivos móviles
-        document.addEventListener('DOMContentLoaded', () => {
-            // Obtén todos los elementos "navbar-burger"
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Script para manejar el botón de hamburguesa en dispositivos móviles
+      document.addEventListener("DOMContentLoaded", () => {
+        // Obtén todos los elementos "navbar-burger"
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
 
-            // Verifica si hay algún "navbar-burger"
-            if ($navbarBurgers.length > 0) {
-                // Añade un evento de clic a cada "navbar-burger"
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-                        // Obtén el objetivo del "navbar-burger"
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
+        // Verifica si hay algún "navbar-burger"
+        if ($navbarBurgers.length > 0) {
+          // Añade un evento de clic a cada "navbar-burger"
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Obtén el objetivo del "navbar-burger"
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
 
-                        // Alterna las clases "is-active"
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-                    });
-                });
-            }
-        });
-
-        function verDetalleAuto(id) {
-            // Aquí redirige a la página de detalle del auto seleccionado
-            window.location.href = "autos.html?id=" + id;
+              // Alterna las clases "is-active"
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
         }
-    </script>    
+      });
+
+      function verDetalleAuto(id) {
+        // Aquí redirige a la página de detalle del auto seleccionado
+        window.location.href = "autos.html?id=" + id;
+      }
+    </script>
     <div class="gallery">
-        <div class="card">
-            <div class="content">
-                <p>Camaro Zl1, Mod. 2022 </p>
-                <a href="#" onclick="verDetalleAuto(1)"><img src="img/camaro1.png" alt="Preview"></a>
-                <br />
-            </div>
+      <div class="card">
+        <div class="content">
+          <p>Camaro Zl1, Mod. 2022</p>
+          <a href="#" onclick="verDetalleAuto(1)"
+            ><img src="img/camaro1.png" alt="Preview"
+          /></a>
+          <br />
         </div>
-        <div class="card">
-            <div class="content">
-                <p>Corvette Stingray, Mod.2022</p>
-                <a href="#" onclick="verDetalleAuto(2)"><img src="img/corvette3.png" alt="Preview"></a>
-                <br />
-            </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Corvette Stingray, Mod.2022</p>
+          <a href="#" onclick="verDetalleAuto(2)"
+            ><img src="img/corvette3.png" alt="Preview"
+          /></a>
+          <br />
         </div>
-        <div class="card">
-            <div class="content">
-                <p>Toyota Hilux, Mod. 2024</p>
-                <a href="#" onclick="verDetalleAuto(3)"><img src="img/pngegg (8).png" alt="Preview"></a>
-                <br />
-            </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Toyota Hilux, Mod. 2024</p>
+          <a href="#" onclick="verDetalleAuto(3)"
+            ><img src="img/pngegg (8).png" alt="Preview"
+          /></a>
+          <br />
         </div>
-        <div class="card">
-            <div class="content">
-                <p>BMW X6, Mod. 2023</p>
-                <a href="#" onclick="verDetalleAuto(4)"><img src="img/pngegg (2).png" alt="Preview"></a>
-                <br />
-            </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>BMW X6, Mod. 2023</p>
+          <a href="#" onclick="verDetalleAuto(4)"
+            ><img src="img/pngegg (2).png" alt="Preview"
+          /></a>
+          <br />
         </div>
+      </div>
     </div>
-    <footer class="bg-dark py-3">
-        <div class="container">
-            <p class="text-white">© <span id="year"></span> Tu Concesionaria de Autos</p>
-        </div>
-    </footer>
-</body>
+
+    <div id="footer-container"></div>
+
+    <script src="js/bulma-carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <a
+      href="#"
+      id="scroll-to-top"
+      class="button is-primary is-rounded"
+      title="Subir"
+      aria-label="Subir"
+    >
+      <span class="icon">
+        <i class="fas fa-chevron-up"></i>
+      </span>
+    </a>
+  </body>
 </html>

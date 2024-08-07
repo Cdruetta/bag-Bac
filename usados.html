@@ -1,280 +1,412 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autos Usados - BAGBAC CARS</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    <link rel="stylesheet" href="css/bulma.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/usados.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAGBAC CARS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="css/bulma.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <header class="bg-dark py-3">
-        <div class="container">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="index.html">
-                        <img src="img/minilogo.png" alt="Logo de Nuestros Autos" width="50" height="40">
-                        <h1 class="title is-4">BAGBAC</h1>
-                    </a>
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img
+                src="img/baglogo.png"
+                alt="Logo de Nuestros Autos"
+                width="50"
+                height="40"
+              />
+              <h1 class="title is-4">BAGBAC CARS</h1>
+            </a>
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Más</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="clasificados.html"
+                    >Clasificados</a
+                  >
+                  <hr class="navbar-divider" />
+                  <a class="navbar-item" href="autos.html">Detalles de Autos</a>
                 </div>
-                <div id="navbarBasicExample" class="navbar-menu">
-                    <div class="navbar-start">
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link">Más</a>
-                            <div class="navbar-dropdown">
-                                <a class="navbar-item" href="clasificados.html">Clasificados</a>
-                                <a class="navbar-item" href="fichas_tecnicas.html">Fichas Técnicas</a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item" href="autos.html">Detalles de Autos</a>
-                            </div>
-                        </div>
-                        <div class="navbar-item">
-                            <div class="buttons">
-                                <a id="seguros-button" class="button is-primary is-outlined" href="clasificados.html"><strong>Usados</strong></a>
-                                <a id="postventa-button" class="button is-primary is-outlined" href="#"><strong>Post Venta</strong></a>
-                                <a id="usados-button" class="button is-primary is-outlined" href="#"><strong>Seguros</strong></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="navbar-end">
-                        <div class="navbar-item">
-                            <div class="buttons">
-                                <a id="login-button" class="button is-success" href="login.html"><strong>Iniciar Sesión</strong></a>
-                                <a id="register-button" class="button is-light" href="registro.html"><strong>Registrarse</strong></a>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a
+                    id="seguros-button"
+                    class="button is-primary is-outlined"
+                    href="clasificados.html"
+                    ><strong>0Km</strong></a
+                  >
+                  <a
+                    id="postventa-button"
+                    class="button is-primary is-outlined"
+                    href="garantias.html"
+                    ><strong>Garantias</strong></a
+                  >
+                  <a
+                    id="usados-button-1"
+                    class="button is-primary is-outlined"
+                    href="usados.html"
+                    ><strong>Usados</strong></a
+                  >
+                  <a
+                    id="seguros-button"
+                    class="button is-primary is-outlined"
+                    href="seguros.html"
+                    ><strong>Seguros</strong></a
+                  >
                 </div>
-            </nav>
-        </div>
+              </div>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a
+                    id="login-button"
+                    class="button is-success"
+                    href="login.html"
+                    ><strong>Iniciar Sesión</strong></a
+                  >
+                  <a
+                    id="register-button"
+                    class="button is-light"
+                    href="registro.html"
+                    ><strong>Registrarse</strong></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
+  <!-- Encabezado hero para seguros de autos -->
+    <div class="hero-body">
+      <div class="container">
+        <marquee class="title is-4">------ Te ayudamos a elegir lo mejor para vos ------ Te ayudamos a elegir lo mejor para vos ------</marquee>
+      </div>
+    </div>
+  </header>
+
 
     <!-- Sección del Carrusel -->
-    <section class="hero">
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/banner1.png" alt="Imagen 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/banner2.jpg" alt="Imagen 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/banner3.jpg" alt="Imagen 3">
-                </div>
-            </div>
-            <a class="carousel-control prev" href="#">&#10094;</a>
-            <a class="carousel-control next" href="#">&#10095;</a>
+    <section class="hero py-4">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner1.png" alt="Imagen 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner2.jpg" alt="Imagen 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.jpg" alt="Imagen 3" />
+          </div>
         </div>
-    </section>
-    
+        <a class="carousel-control prev" href="#">&#10094;</a>
+        <a class="carousel-control next" href="#">&#10095;</a>
+      </div>
     </section>
 
     <main class="section">
-        <div class="container">
-            <!-- Sección de introducción -->
-            <div class="box has-text-centered">
-                <h1 class="title is-2">Que tu próximo usado se sienta como cero</h1>
-                <p class="subtitle is-4">Asesoría personalizada, garantía extendida y servicio de posventa, para que comprar un auto usado, se sienta como cero.</p>
-            </div>
-
-            <!-- Buscador -->
-            <div class="search-container box">
-                <form id="searchForm">
-                    <div class="columns is-multiline">
-                        <div class="column is-one-third">
-                            <div class="field">
-                                <label class="label">Nombre del Auto</label>
-                                <div class="control">
-                                    <input class="input" type="text" id="searchName" placeholder="Buscar por nombre">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-one-third">
-                            <div class="field">
-                                <label class="label">Año</label>
-                                <div class="control">
-                                    <input class="input" type="number" id="searchYear" placeholder="Buscar por año">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-one-third">
-                            <div class="field">
-                                <label class="label">Modelo</label>
-                                <div class="control">
-                                    <input class="input" type="text" id="searchModel" placeholder="Buscar por modelo">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-full">
-                            <div class="field has-text-centered">
-                                <button type="submit" class="button is-link">Buscar</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Menú desplegable de ordenación -->
-            <div class="box">
-                <div class="field">
-                    <label class="label">Ordenar por</label>
-                    <div class="control">
-                        <div class="select">
-                            <select id="sortSelect">
-                                <option value="price-asc">Menor precio</option>
-                                <option value="price-desc">Mayor precio</option>
-                                <option value="km-asc">Menor kilometraje</option>
-                                <option value="km-desc">Mayor kilometraje</option>
-                                <option value="year-asc">Menor antigüedad</option>
-                                <option value="year-desc">Mayor antigüedad</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="columns is-multiline car-section" id="carContainer">
-                <!-- Aquí se cargarán las tarjetas de los autos -->
-                <div class="column is-one-third car-item" data-name="Fiat Uno 1.3 Fire 5p L10" data-year="2011" data-model="Model A" data-price="4000000" data-km="110000">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/fiatuno.jpeg" alt="Fiat Uno 1.3 Fire 5p L10">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h3 class="title is-4">Fiat Uno 1.3 Fire 5p L10</h3>
-                                <p>Próximo Service: 110.000 kms - Próximo cambio de Correa: 155.000 kms</p>
-                                <p><strong>Año: 2011</strong></p>
-                                <p><strong>Modelo: Model A</strong></p>
-                                <p><strong>Precio: $4.000.000</strong></p>
-                                <a href="#" class="button is-primary">Ver Detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third car-item" data-name="Chevrolet Onix 1.4 Lt L16" data-year="2016" data-model="Model B" data-price="16000000" data-km="66300">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/onix.jpg" alt="Chevrolet Onix 1.4 Lt L16">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h3 class="title is-4">Chevrolet Onix 1.4 Lt L16</h3>
-                                <p>1.4 Hatchback | Usado | Nafta | 66.300 km | Negro</p>
-                                <p><strong>Año: 2016</strong></p>
-                                <p><strong>Modelo: Model B</strong></p>
-                                <p><strong>Precio: $16.000.000</strong></p>
-                                <a href="#" class="button is-primary">Ver Detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third car-item" data-name="Ford Ka 1.5 S L16" data-year="2017" data-model="Model C" data-price="17000000" data-km="79100">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/fordka.jpg" alt="Ford Ka 1.5 S L16">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h3 class="title is-4">Ford Ka 1.5 S L16</h3>
-                                <p>1.5 Hatchback | Usado | Nafta</p>
-                                <p>2017 | 79.100 km | Blanco</p>
-                                <p><strong>Año: 2017</strong></p>
-                                <p><strong>Modelo: Model C</strong></p>
-                                <p><strong>Precio: $17.000.000</strong></p>
-                                <a href="#" class="button is-primary">Ver Detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third car-item" data-name="Chevrolet Sonic 1.6 Ltz 5p L15" data-year="2015" data-model="Model D" data-price="12000000" data-km="77400">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/sonic.jpg" alt="Chevrolet Sonic 1.6 Ltz 5p L15">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h3 class="title is-4">Chevrolet Sonic 1.6 Ltz 5p L15</h3>
-                                <p>1.6 Hatchback | Usado | Nafta</p>
-                                <p>2015 | 77.400 km | Gris</p>
-                                <p><strong>Año: 2015</strong></p>
-                                <p><strong>Modelo: Model D</strong></p>
-                                <p><strong>Precio: $12.000.000</strong></p>
-                                <a href="#" class="button is-primary">Ver Detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third car-item" data-name="Renault Kangoo Express 1.6" data-year="2020" data-model="Model E" data-price="24000000" data-km="126300">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/kangoo.jpg" alt="Renault Kangoo Express 1.6">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h3 class="title is-4">Renault Kangoo Express 1.6</h3>
-                                <p>1.6 Utilitario | Usado | Nafta</p>
-                                <p>2020 | 126.300 km | Acero</p>
-                                <p><strong>Año: 2020</strong></p>
-                                <p><strong>Modelo: Model E</strong></p>
-                                <p><strong>Precio: $24.000.000</strong></p>
-                                <a href="#" class="button is-primary">Ver Detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third car-item" data-name="Jeep Grand Cherokee 4.7 V8 Limited L99" data-year="2004" data-model="Model F" data-price="17500000" data-km="142000">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/jeeo.jpg" alt="Jeep Grand Cherokee 4.7 V8 Limited L99">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h3 class="title is-4">Jeep Grand Cherokee 4.7 V8 Limited L99</h3>
-                                <p>4.7 Suv Plus | Usado | Nafta | 142.000 km | Azul</p>
-                                <p><strong>Año: 2004</strong></p>
-                                <p><strong>Modelo: Model F</strong></p>
-                                <p><strong>Precio: $17.500.000</strong></p>
-                                <a href="#" class="button is-primary">Ver Detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <!-- Sección de introducción -->
+        <div class="box has-text-centered py-4">
+          <h1 class="title is-2">Que tu próximo usado se sienta como cero</h1>
+          <p class="subtitle is-4">
+            Asesoría personalizada, garantía extendida y servicio de posventa,
+            para que comprar un auto usado, se sienta como cero.
+          </p>
         </div>
+
+        <!-- Buscador -->
+        <div class="search-container box py-4">
+          <form id="searchForm">
+            <div class="columns is-multiline">
+              <div class="column is-one-third">
+                <div class="field">
+                  <label class="label">Nombre del Auto</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      id="searchName"
+                      placeholder="Buscar por nombre"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="column is-one-third">
+                <div class="field">
+                  <label class="label">Año</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="number"
+                      id="searchYear"
+                      placeholder="Buscar por año"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="column is-one-third">
+                <div class="field">
+                  <label class="label">Modelo</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      id="searchModel"
+                      placeholder="Buscar por modelo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="column is-full">
+                <div class="field has-text-centered">
+                  <button type="submit" class="button is-link">Buscar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Menú desplegable de ordenación -->
+        <div class="box py-4">
+          <div class="field">
+            <label class="label">Ordenar por</label>
+            <div class="control">
+              <div class="select">
+                <select id="sortSelect">
+                  <option value="price-asc">Menor precio</option>
+                  <option value="price-desc">Mayor precio</option>
+                  <option value="km-asc">Menor kilometraje</option>
+                  <option value="km-desc">Mayor kilometraje</option>
+                  <option value="year-asc">Menor antigüedad</option>
+                  <option value="year-desc">Mayor antigüedad</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-multiline car-section py-4" id="carContainer">
+          <!-- Aquí se cargarán las tarjetas de los autos -->
+          <!-- Añade padding a las tarjetas para mantener consistencia -->
+          <div
+            class="column is-one-third car-item"
+            data-name="Fiat Uno 1.3 Fire 5p L10"
+            data-year="2011"
+            data-model="Model A"
+            data-price="4000000"
+            data-km="110000"
+          >
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="img/fiatuno.jpeg" alt="Fiat Uno 1.3 Fire 5p L10" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h3 class="title is-4">Fiat Uno 1.3 Fire 5p L10</h3>
+                  <p>
+                    Próximo Service: 110.000 kms - Próximo cambio de Correa:
+                    155.000 kms
+                  </p>
+                  <p><strong>Año: 2011</strong></p>
+                  <p><strong>Modelo: Model A</strong></p>
+                  <p><strong>Precio: $4.000.000</strong></p>
+                  <a href="#" class="button is-primary">Ver Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="column is-one-third car-item"
+            data-name="Chevrolet Onix 1.4 Lt L16"
+            data-year="2016"
+            data-model="Model B"
+            data-price="16000000"
+            data-km="66300"
+          >
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="img/onix.jpg" alt="Chevrolet Onix 1.4 Lt L16" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h3 class="title is-4">Chevrolet Onix 1.4 Lt L16</h3>
+                  <p>1.4 Hatchback | Usado | Nafta | 66.300 km | Negro</p>
+                  <p><strong>Año: 2016</strong></p>
+                  <p><strong>Modelo: Model B</strong></p>
+                  <p><strong>Precio: $16.000.000</strong></p>
+                  <a href="#" class="button is-primary">Ver Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="column is-one-third car-item"
+            data-name="Ford Ka 1.5 S L16"
+            data-year="2017"
+            data-model="Model C"
+            data-price="17000000"
+            data-km="79100"
+          >
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="img/fordka.jpg" alt="Ford Ka 1.5 S L16" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h3 class="title is-4">Ford Ka 1.5 S L16</h3>
+                  <p>1.5 Hatchback | Usado | Nafta</p>
+                  <p>2017 | 79.100 km | Blanco</p>
+                  <p><strong>Año: 2017</strong></p>
+                  <p><strong>Modelo: Model C</strong></p>
+                  <p><strong>Precio: $17.000.000</strong></p>
+                  <a href="#" class="button is-primary">Ver Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="column is-one-third car-item"
+            data-name="Chevrolet Sonic 1.6 Ltz 5p L15"
+            data-year="2015"
+            data-model="Model D"
+            data-price="12000000"
+            data-km="77400"
+          >
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="img/sonic.jpg"
+                    alt="Chevrolet Sonic 1.6 Ltz 5p L15"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h3 class="title is-4">Chevrolet Sonic 1.6 Ltz 5p L15</h3>
+                  <p>1.6 Hatchback | Usado | Nafta</p>
+                  <p>2015 | 77.400 km | Gris</p>
+                  <p><strong>Año: 2015</strong></p>
+                  <p><strong>Modelo: Model D</strong></p>
+                  <p><strong>Precio: $12.000.000</strong></p>
+                  <a href="#" class="button is-primary">Ver Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="column is-one-third car-item"
+            data-name="Renault Kangoo Express 1.6"
+            data-year="2020"
+            data-model="Model E"
+            data-price="24000000"
+            data-km="126300"
+          >
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="img/kangoo.jpg" alt="Renault Kangoo Express 1.6" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h3 class="title is-4">Renault Kangoo Express 1.6</h3>
+                  <p>1.6 Utilitario | Usado | Nafta</p>
+                  <p>2020 | 126.300 km | Acero</p>
+                  <p><strong>Año: 2020</strong></p>
+                  <p><strong>Modelo: Model E</strong></p>
+                  <p><strong>Precio: $24.000.000</strong></p>
+                  <a href="#" class="button is-primary">Ver Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="column is-one-third car-item"
+            data-name="Jeep Grand Cherokee 4.7 V8 Limited L99"
+            data-year="2004"
+            data-model="Model F"
+            data-price="17500000"
+            data-km="142000"
+          >
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="img/jeeo.jpg"
+                    alt="Jeep Grand Cherokee 4.7 V8 Limited L99"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h3 class="title is-4">
+                    Jeep Grand Cherokee 4.7 V8 Limited L99
+                  </h3>
+                  <p>4.7 Suv Plus | Usado | Nafta | 142.000 km | Azul</p>
+                  <p><strong>Año: 2004</strong></p>
+                  <p><strong>Modelo: Model F</strong></p>
+                  <p><strong>Precio: $17.500.000</strong></p>
+                  <a href="#" class="button is-primary">Ver Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>© 2023 BAGBAC CARS</strong> Todos los derechos reservados.
-            </p>
-        </div>
-    </footer>
+    <div id="footer-container" class="py-4"></div>
 
-    <script src="js/usados.js"></script>
-</body>
+    <script src="js/bulma-carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Botón de subir -->
+<a href="#" id="scroll-to-top" class="button is-primary is-rounded" title="Subir" aria-label="Subir">
+  <span class="icon">
+    <i class="fas fa-chevron-up"></i>
+  </span>
+</a>
+  </body>
 </html>
