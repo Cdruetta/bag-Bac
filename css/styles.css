@@ -153,5 +153,23 @@ button.is-small.is-info {
   text-align: center;
 }
 
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  opacity: 30%;
+  transition: opacity 0.3s;
+}
+
+#scroll-to-top.is-active {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 20px;
+  color: #fff;
+}
+
 
 
