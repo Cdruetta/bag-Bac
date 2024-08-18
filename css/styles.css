@@ -1,122 +1,75 @@
-/* Estilo para eliminar el espacio entre las imágenes del carousel 2 */
+/* Estilo para el carrusel */
 #carousel-cuerpo .carousel-item {
-    margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 
 .carousel-item img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-/* Estilos para la sección con efecto de vidrio */
+/* Estilo para secciones con efecto de vidrio */
 .section {
-    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo con opacidad */
-    border-radius: 10px; /* Borde redondeado */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    padding: 20px; /* Espaciado interno */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-/* Estilos para el carousel */
-.carousel, .carousel-1 {
-    display: flex;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+/* Carrusel personalizado */
+.carousel.carousel-1 {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
-.carousel-1 > div {
-    scroll-snap-align: start;
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 0 10px;
+.carousel.carousel-1 .carousel-inner {
+  display: flex;
 }
 
-.carousel-1 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: filter 0.3s ease; /* Transición suave para el efecto */
+.carousel.carousel-1 .carousel-item {
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 0 10px;
 }
 
-.carousel-1 img:hover {
-    filter: brightness(40%); /* Reducción del brillo */
+.carousel.carousel-1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: filter 0.3s ease;
 }
-/* Estilos para la sección con efecto de vidrio */
-.section {
-    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo con opacidad */
-    border-radius: 10px; /* Borde redondeado */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    padding: 20px; /* Espaciado interno */
-  }
-  
-  /* Estilos para el carousel 1 */
-  .carousel.carousel-1 {
-    display: flex;
-    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .carousel.carousel-1 > div {
-    scroll-snap-align: start;
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 0 10px;
-  }
-  
-  .carousel.carousel-1 .image-container {
-    position: relative;
-  }
-  
-  .carousel.carousel-1 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .carousel.carousel-1 .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .carousel.carousel-1 .image-overlay .overlay-content {
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .carousel.carousel-1 .image-container:hover .image-overlay {
-    display: flex; /* Mostrar superposición al pasar el cursor */
-  }
-  
-  .image-container {
-    position: relative;
+
+.carousel.carousel-1 img:hover {
+  filter: brightness(40%);
+}
+
+/* Superposición de imagen con efecto de opacidad */
+.image-container {
+  position: relative;
 }
 
 .image-overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .image-container:hover .image-overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
+/* Formulario alineado a la izquierda */
 .form-left {
   display: flex;
   flex-direction: column;
@@ -133,32 +86,37 @@ button.is-small.is-info {
   box-shadow: none !important;
 }
 
+/* Estilos para la galería de vehículos de lujo */
 .luxury-vehicle {
-  padding: 20px; /* Ajusta el valor según sea necesario */
+  padding: 20px;
 }
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .card {
   margin: 10px;
 }
+
 .card img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
+
 .card .content {
   text-align: center;
 }
 
+/* Botón de scroll-to-top */
 #scroll-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 9999;
-  opacity: 30%;
+  opacity: 0.3;
   transition: opacity 0.3s;
 }
 
@@ -170,12 +128,10 @@ button.is-small.is-info {
   font-size: 20px;
   color: #fff;
 }
+
+/* Estilos para el footer */
 .footer .copyright {
-  margin-top: 1rem; /* Espaciado arriba */
-  font-size: 0.875rem; /* Ajusta el tamaño de fuente si es necesario */
-  color: #ddd; /* Ajusta el color si es necesario */
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #ddd;
 }
-
-
-
-
