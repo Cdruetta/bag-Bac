@@ -122,67 +122,90 @@
             </div>
         </header>
     <script>
-        // Script para manejar el botón de hamburguesa en dispositivos móviles
-        document.addEventListener('DOMContentLoaded', () => {
-            // Obtén todos los elementos "navbar-burger"
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Script para manejar el botón de hamburguesa en dispositivos móviles
+      document.addEventListener("DOMContentLoaded", () => {
+        // Obtén todos los elementos "navbar-burger"
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
 
-            // Verifica si hay algún "navbar-burger"
-            if ($navbarBurgers.length > 0) {
-                // Añade un evento de clic a cada "navbar-burger"
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-                        // Obtén el objetivo del "navbar-burger"
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
+        // Verifica si hay algún "navbar-burger"
+        if ($navbarBurgers.length > 0) {
+          // Añade un evento de clic a cada "navbar-burger"
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Obtén el objetivo del "navbar-burger"
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
 
-                        // Alterna las clases "is-active"
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-                    });
-                });
-            }
-        });
-
-        function verDetalleAuto(id) {
-            // Aquí redirige a la página de detalle del auto seleccionado
-            window.location.href = "autos.html?id=" + id;
+              // Alterna las clases "is-active"
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
         }
-    </script>    
+      });
+
+      function verDetalleAuto(id) {
+        // Aquí redirige a la página de detalle del auto seleccionado
+        window.location.href = "autos.html?id=" + id;
+      }
+    </script>
     <div class="gallery">
-        <div class="card">
-            <div class="content">
-                <p>Camaro Zl1, Mod. 2022 </p>
-                <a href="#" onclick="verDetalleAuto(1)"><img src="img/camaro1.png" alt="Preview"></a>
-                <br />
-            </div>
+      <div class="card">
+        <div class="content">
+          <p>Camaro Zl1, Mod. 2022</p>
+          <a href="#" onclick="verDetalleAuto(1)"
+            ><img src="img/camaro1.png" alt="Preview"
+          /></a>
+          <br />
         </div>
-        <div class="card">
-            <div class="content">
-                <p>Corvette Stingray, Mod.2022</p>
-                <a href="#" onclick="verDetalleAuto(2)"><img src="img/corvette3.png" alt="Preview"></a>
-                <br />
-            </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Corvette Stingray, Mod.2022</p>
+          <a href="#" onclick="verDetalleAuto(2)"
+            ><img src="img/corvette3.png" alt="Preview"
+          /></a>
+          <br />
         </div>
-        <div class="card">
-            <div class="content">
-                <p>Toyota Hilux, Mod. 2024</p>
-                <a href="#" onclick="verDetalleAuto(3)"><img src="img/pngegg (8).png" alt="Preview"></a>
-                <br />
-            </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Toyota Hilux, Mod. 2024</p>
+          <a href="#" onclick="verDetalleAuto(3)"
+            ><img src="img/pngegg (8).png" alt="Preview"
+          /></a>
+          <br />
         </div>
-        <div class="card">
-            <div class="content">
-                <p>BMW X6, Mod. 2023</p>
-                <a href="#" onclick="verDetalleAuto(4)"><img src="img/pngegg (2).png" alt="Preview"></a>
-                <br />
-            </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>BMW X6, Mod. 2023</p>
+          <a href="#" onclick="verDetalleAuto(4)"
+            ><img src="img/pngegg (2).png" alt="Preview"
+          /></a>
+          <br />
         </div>
+      </div>
     </div>
-    <footer class="bg-dark py-3">
-        <div class="container">
-            <p class="text-white">© <span id="year"></span> Tu Concesionaria de Autos</p>
-        </div>
-    </footer>
-</body>
+
+    <div id="footer-container"></div>
+
+    <script src="js/bulma-carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <a
+      href="#"
+      id="scroll-to-top"
+      class="button is-primary is-rounded"
+      title="Subir"
+      aria-label="Subir"
+    >
+      <span class="icon">
+        <i class="fas fa-chevron-up"></i>
+      </span>
+    </a>
+  </body>
 </html>

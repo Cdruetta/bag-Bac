@@ -133,5 +133,49 @@ button.is-small.is-info {
   box-shadow: none !important;
 }
 
+.luxury-vehicle {
+  padding: 20px; /* Ajusta el valor según sea necesario */
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  margin: 10px;
+}
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card .content {
+  text-align: center;
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  opacity: 30%;
+  transition: opacity 0.3s;
+}
+
+#scroll-to-top.is-active {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 20px;
+  color: #fff;
+}
+.footer .copyright {
+  margin-top: 1rem; /* Espaciado arriba */
+  font-size: 0.875rem; /* Ajusta el tamaño de fuente si es necesario */
+  color: #ddd; /* Ajusta el color si es necesario */
+}
+
+
 
 

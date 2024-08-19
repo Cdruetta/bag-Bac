@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autos</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    <link rel="stylesheet" href="/bulma/css/bulma.css">
-    <link rel="stylesheet" href="css/bulma.css">
-    <link rel="stylesheet" href="css/bulma-carousel.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="css/bulma.css" />
+    <link rel="stylesheet" href="css/bulma-carousel.min.css" />
     <style>
-    .luxury-vehicle {
-    padding: 20px; /* Ajusta el valor según sea necesario */
-}
+      .luxury-vehicle {
+        padding: 20px; /* Ajusta el valor según sea necesario */
+      }
 
-.carousel-container {
-    width: 800px; /* Ajusta el ancho según sea necesario */
-    height: 400px; /* Ajusta la altura según sea necesario */
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto; /* Centra el contenedor si es necesario */
-}
+      .carousel-container {
+        width: 800px; /* Ajusta el ancho según sea necesario */
+        height: 400px; /* Ajusta la altura según sea necesario */
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto; /* Centra el contenedor si es necesario */
+      }
 
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 100%; /* Asegúrate de que el carrusel ocupe el 100% del contenedor */
-    overflow: hidden;
-}
+      .carousel {
+        position: relative;
+        width: 100%;
+        height: 100%; /* Asegúrate de que el carrusel ocupe el 100% del contenedor */
+        overflow: hidden;
+      }
 
-.carousel-items {
-    display: flex;
-    transition: transform 0.5s ease;
-}
+      .carousel-items {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
 
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-}
+      .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+      }
 
-.carousel img {
-    width: 100%;
-    height: 100%; /* Asegúrate de que las imágenes llenen el contenedor */
-    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
-    display: block;
-}
+      .carousel img {
+        width: 100%;
+        height: 100%; /* Asegúrate de que las imágenes llenen el contenedor */
+        object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
+        display: block;
+      }
 
-.carousel-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
+      .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
 
-.carousel-nav.prev {
-    left: 10px;
-}
+      .carousel-nav.prev {
+        left: 10px;
+      }
 
-.carousel-nav.next {
-    right: 10px;
-}
-
+      .carousel-nav.next {
+        right: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header class="bg-dark py-3">
         <div class="container">
         <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -119,95 +127,148 @@
                     id="postventa-button"
                     class="button is-primary is-outlined"
                     href="garantias.html"
-                    ><strong>Garantias</strong></a>
-                    <a
-                    id="usados-button"
-                    class="button is-primary is-outlined"
-                    href="#"> 
-                    <strong>Post Venta</strong></a>
-                    <a
+                    ><strong>Garantias</strong></a
+                  >
+                  <a
                     id="usados-button"
                     class="button is-primary is-outlined"
                     href="#"
-                    >
-                    <strong>Seguros</strong></a> 
+                  >
+                    <strong>Post Venta</strong></a
+                  >
+                  <a
+                    id="usados-button"
+                    class="button is-primary is-outlined"
+                    href="#"
+                  >
+                    <strong>Seguros</strong></a
+                  >
                 </div>
-                </div>
+              </div>
             </div>
             <div class="navbar-end">
-                <div class="navbar-item">
+              <div class="navbar-item">
                 <div class="buttons">
-                    <a
+                  <a
                     id="login-button"
                     class="button is-success"
                     href="login.html"
                     ><strong>Iniciar Sesión</strong></a
-                    >
-                    <a
+                  >
+                  <a
                     id="register-button"
                     class="button is-light"
                     href="registro.html"
                     ><strong>Registrarse</strong></a
-                    >
+                  >
                 </div>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </nav>
-        </div>
+      </div>
     </header>
     <main>
-        <div id="detalle-auto" class="container">
-            <!-- El contenido se rellenará dinámicamente aquí -->
-        </div>
+      <div id="detalle-auto" class="container">
+        <!-- El contenido se rellenará dinámicamente aquí -->
+      </div>
     </main>
     <script>
-        // Obtener el ID del auto de la URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const autoId = parseInt(urlParams.get('id'));
+      // Obtener el ID del auto de la URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const autoId = parseInt(urlParams.get("id"));
 
-        // Array con los detalles de cada auto (podrías cargar estos datos desde una fuente externa)
-        const autos = [
-            { id: 1, modelo: "Chevrolette Camaro Zl1", año: 2024, imagen: "img/camaro1hd.jpg", descripcion: "Camaro Zl1, Mod. 2024", precio: "$190,000", motor : "LT4 V8 sobrealimentado de 650 CV", transmision : "SuperMatic 10L90-E", capacidad : "5 plazas", imagenes: [
-                "img/camaro1hd.jpg",
-                "img/camaro2hd.jpg",
-                "img/camaro3hd.jpg",
-                "img/camaro4hd.jpg"
-            ] },
-            { id: 2, modelo: "Chevrolet Corvette Stingray", año: 2024, imagen: "img/corvette2hd.jpg", descripcion: "Corvette Stingray, Mod. 2024", precio: "$195,000", motor : "LT2 V-8 Engine", transmision : "Tremec TR-9080 DCT", capacidad : "5 plazas", imagenes: [
-                "img/corvette2hd.jpg",
-                "img/corvette1HD.jpg",
-                "img/corvette3hd.jpg",
-                "img/corvette4hd.jpg"
-            ] },
-            { id: 3, modelo: "Toyota Hilux", año: 2024, imagen: "img/pngegg (8).png", descripcion: "Toyota Hilux, Mod. 2024", precio: "$26.585", motor: "Motor diésel de cuatro cilindros en línea de 2.8 litros", transmision: "Transmisión automática de 6 velocidades", capacidad: "5 plazas", imagenes: [
-                "img/pngegg (8).png",
-                "img/Hilux.jpg",
-                "img/hilux2.jpg",
-                "img/hilux3.jpg"
-            ] },
-            { id: 4, modelo: "BMW X6", año: 2024, imagen: "img/pngegg (2).png", descripcion: "BMW X6, Mod. 2024", precio: "$60,000", motor : "Motor diésel de seis cilindros en línea de 3.0 litros BMW TwinPower Turbo", transmision : "Transmisión M con Steptronic", capacidad : "5 plazas", imagenes: [
-                "img/pngegg (2).png",
-                "img/bmw1.jpg",
-                "img/bmw2.jpg",
-                "img/bmw3.jpg"
-            ] }
-        ];
+      // Array con los detalles de cada auto (podrías cargar estos datos desde una fuente externa)
+      const autos = [
+        {
+          id: 1,
+          modelo: "Chevrolette Camaro Zl1",
+          año: 2024,
+          imagen: "img/camaro1hd.jpg",
+          descripcion: "Camaro Zl1, Mod. 2024",
+          precio: "$190,000",
+          motor: "LT4 V8 sobrealimentado de 650 CV",
+          transmision: "SuperMatic 10L90-E",
+          capacidad: "5 plazas",
+          imagenes: [
+            "img/camaro1hd.jpg",
+            "img/camaro2hd.jpg",
+            "img/camaro3hd.jpg",
+            "img/camaro4hd.jpg",
+          ],
+        },
+        {
+          id: 2,
+          modelo: "Chevrolet Corvette Stingray",
+          año: 2024,
+          imagen: "img/corvette2hd.jpg",
+          descripcion: "Corvette Stingray, Mod. 2024",
+          precio: "$195,000",
+          motor: "LT2 V-8 Engine",
+          transmision: "Tremec TR-9080 DCT",
+          capacidad: "5 plazas",
+          imagenes: [
+            "img/corvette2hd.jpg",
+            "img/corvette1HD.jpg",
+            "img/corvette3hd.jpg",
+            "img/corvette4hd.jpg",
+          ],
+        },
+        {
+          id: 3,
+          modelo: "Toyota Hilux",
+          año: 2024,
+          imagen: "img/pngegg (8).png",
+          descripcion: "Toyota Hilux, Mod. 2024",
+          precio: "$26.585",
+          motor: "Motor diésel de cuatro cilindros en línea de 2.8 litros",
+          transmision: "Transmisión automática de 6 velocidades",
+          capacidad: "5 plazas",
+          imagenes: [
+            "img/pngegg (8).png",
+            "img/Hilux.jpg",
+            "img/hilux2.jpg",
+            "img/hilux3.jpg",
+          ],
+        },
+        {
+          id: 4,
+          modelo: "BMW X6",
+          año: 2024,
+          imagen: "img/pngegg (2).png",
+          descripcion: "BMW X6, Mod. 2024",
+          precio: "$60,000",
+          motor:
+            "Motor diésel de seis cilindros en línea de 3.0 litros BMW TwinPower Turbo",
+          transmision: "Transmisión M con Steptronic",
+          capacidad: "5 plazas",
+          imagenes: [
+            "img/pngegg (2).png",
+            "img/bmw1.jpg",
+            "img/bmw2.jpg",
+            "img/bmw3.jpg",
+          ],
+        },
+      ];
 
-        const autoSeleccionado = autos.find(auto => auto.id === autoId);
+      const autoSeleccionado = autos.find((auto) => auto.id === autoId);
 
-        if (autoSeleccionado) {
-            const detalleAutoContainer = document.getElementById('detalle-auto');
-            let imagenesHTML = '';
+      if (autoSeleccionado) {
+        const detalleAutoContainer = document.getElementById("detalle-auto");
+        let imagenesHTML = "";
 
-            autoSeleccionado.imagenes.forEach((imagen, index) => {
-                imagenesHTML += `
-                    <div class="carousel-item ${index === 0 ? 'is-active' : ''}">
-                        <img src="${imagen}" alt="Imagen del automóvil ${index + 1}">
+        autoSeleccionado.imagenes.forEach((imagen, index) => {
+          imagenesHTML += `
+                    <div class="carousel-item ${
+                      index === 0 ? "is-active" : ""
+                    }">
+                        <img src="${imagen}" alt="Imagen del automóvil ${
+            index + 1
+          }">
                     </div>`;
-            });
+        });
 
-            detalleAutoContainer.innerHTML = `
+        detalleAutoContainer.innerHTML = `
                 <div class="luxury-vehicle">
                     <p>
                     ¡Este vehículo de lujo combina elegancia y potencia en un diseño sofisticado que no pasará desapercibido.
@@ -235,36 +296,51 @@
                     </div>
                 </div>
             `;
+      }
+
+      // Carrusel JavaScript
+      document.addEventListener("DOMContentLoaded", () => {
+        const prevButton = document.querySelector(".carousel-nav.prev");
+        const nextButton = document.querySelector(".carousel-nav.next");
+        const carouselItems = document.querySelector(".carousel-items");
+        const carouselItemsList = Array.from(carouselItems.children);
+        let index = 0;
+
+        function updateCarousel() {
+          const offset = -index * 100;
+          carouselItems.style.transform = `translateX(${offset}%)`;
         }
 
-        // Carrusel JavaScript
-        document.addEventListener('DOMContentLoaded', () => {
-            const prevButton = document.querySelector('.carousel-nav.prev');
-            const nextButton = document.querySelector('.carousel-nav.next');
-            const carouselItems = document.querySelector('.carousel-items');
-            const carouselItemsList = Array.from(carouselItems.children);
-            let index = 0;
-
-            function updateCarousel() {
-                const offset = -index * 100;
-                carouselItems.style.transform = `translateX(${offset}%)`;
-            }
-
-            prevButton.addEventListener('click', () => {
-                index = (index > 0) ? index - 1 : carouselItemsList.length - 1;
-                updateCarousel();
-            });
-
-            nextButton.addEventListener('click', () => {
-                index = (index < carouselItemsList.length - 1) ? index + 1 : 0;
-                updateCarousel();
-            });
+        prevButton.addEventListener("click", () => {
+          index = index > 0 ? index - 1 : carouselItemsList.length - 1;
+          updateCarousel();
         });
+
+        nextButton.addEventListener("click", () => {
+          index = index < carouselItemsList.length - 1 ? index + 1 : 0;
+          updateCarousel();
+        });
+      });
     </script>
-        <footer class="bg-dark py-3">
-        <div class="container">
-            <p class="text-white">© <span id="year"></span> Tu Concesionaria de Autos</p>
-        </div>
-        </footer>
-    </body>
+    <footer class="bg-dark py-3">
+      <div class="container">
+        <p class="text-white">
+          © <span id="year"></span> Tu Concesionaria de Autos
+        </p>
+      </div>
+    </footer>
+
+    <!-- Botón de subir -->
+    <a
+      href="#"
+      id="scroll-to-top"
+      class="button is-primary is-rounded"
+      title="Subir"
+      aria-label="Subir"
+    >
+      <span class="icon">
+        <i class="fas fa-chevron-up"></i>
+      </span>
+    </a>
+  </body>
 </html>
