@@ -177,5 +177,58 @@ button.is-small.is-info {
 }
 
 
+.luxury-vehicle {
+  padding: 20px; /* Ajusta el valor según sea necesario */
+}
 
+.carousel-container {
+  width: 800px; /* Ajusta el ancho según sea necesario */
+  height: 400px; /* Ajusta la altura según sea necesario */
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto; /* Centra el contenedor si es necesario */
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Asegúrate de que el carrusel ocupe el 100% del contenedor */
+  overflow: hidden;
+}
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%; /* Asegúrate de que las imágenes llenen el contenedor */
+  object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
+  display: block;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-nav.prev {
+  left: 10px;
+}
+
+.carousel-nav.next {
+  right: 10px;
+}
 
